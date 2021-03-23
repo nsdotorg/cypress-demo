@@ -359,7 +359,7 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 `cypress.json`
 
-```
+```json
 "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
@@ -375,7 +375,7 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 `package.json (windows)`
 
-```
+```json
 "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports
          && mkdir cypress\\reports\\mochareports",
