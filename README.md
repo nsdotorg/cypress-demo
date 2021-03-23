@@ -207,7 +207,8 @@ npx cypress run
 
 ## **Collections vs Individual Tests**
 
-- Mocha Test Framework
+Mocha Test Framework
+
 - describe (collection of tests)
 - it (individual tests)
 
