@@ -445,13 +445,15 @@ module.exports = (on, config) => {
 }
 ```
 
-- Feature File [Gherkin Sytax] \- /cypress/integration/firstTest.feature
-- Step Definition Directory \- /cypress/integration/firstTest
-- Step Definition File \- /cypress/integration/firstTest/firstTest.spec.js
+- Feature File [Gherkin Sytax] `/cypress/integration/firstTest.feature`
+- Step Definition Directory `/cypress/integration/firstTest`
+- Step Definition File `/cypress/integration/firstTest/firstTest.spec.js`
+
+Features
 
 - Parameters (Reusable Functions)
 - Data Tables
-- Tags:
+- Tags
 
   - @smoke
   - @focus
