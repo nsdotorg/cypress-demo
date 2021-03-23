@@ -117,7 +117,7 @@
 
 ## **Installation**
 
-```
+```shell
 npm init -y
 sudo npm install cypress
 npx cypress run
@@ -125,7 +125,7 @@ npx cypress run
 
 ## **Directory Structure**
 
-```
+```shell
 /root/cypress/fixtures
     static files
     external data
@@ -170,13 +170,13 @@ npx cypress run
 
 1. Desktop App
 
-```
+```shell
 npx cypress open
 ```
 
 2. Headless Run - Running tests through command line
 
-```
+```shell
 npx cypress run
 ```
 
@@ -189,7 +189,7 @@ npx cypress run
 
 - Intellisense - /// Directive
 
-```
+```javascript
 /// <reference types="Cypress" />
 ```
 
@@ -197,7 +197,7 @@ npx cypress run
 
 `jsconfig.json`
 
-```
+```json
 {
   "include": ["./node_modules/cypress", "cypress/**/*.js"]
 }
@@ -269,7 +269,7 @@ Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/con
 - .then() expects input then and there (works with objects)
 - Aliases help you use output later on
 
-```
+```javascript
 .as('aliasName)
 cy.get('@aliasName).first().click()
 ```
@@ -286,7 +286,7 @@ cy.get('@aliasName).first().click()
 
 **`CLI COMMANDS`**
 
-```
+```shell
 // run all spec/test files of the project
 npx cypress run
 
@@ -323,37 +323,37 @@ Visit [Cypress File Upload Plugin Page](https://github.com/abramenal/cypress-fil
 
 1. [Install Mocha](https://www.npmjs.com/package/mocha)
 
-```
+```shell
 npm install mocha --save-dev
 ```
 
 2. [Install cypress-multi-reporters](https://www.npmjs.com/package/cypress-multi-reporters)
 
-```
+```shell
 npm install cypress-multi-reporters --save-dev
 ```
 
 3. [Install mochawesome](https://www.npmjs.com/package/mochawesome)
 
-```
+```shell
 npm install mochawesome --save-dev
 ```
 
 4. [Install mochawesome-merge](https://www.npmjs.com/package/mochawesome-merge)
 
-```
+```shell
 npm install mochawesome-merge --save-dev
 ```
 
 5. [Install mochawesome-report-generator](https://www.npmjs.com/package/mochawesome-report-generator)
 
-```
+```shell
 npm install mochawesome-report-generator --save-dev
 ```
 
 **`Single Command Installation`**
 
-```
+```shell
 npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
 ```
 
@@ -478,34 +478,26 @@ npx cypress-tags run -e TAGS='@smoke and not @ui'
 
 ## **API Testing**
 
-```
-
 - http://dummyapiexample.com
 - Remove (/**/\*.feature, /**/\*.features)
 - Expected vs Yielded Values
 
-Files:
-/cypress/integration/mytests/api.spec.ts
-
-```
+Files
+`/cypress/integration/mytests/api.spec.ts`
 
 ## **Page Object Model**
-
-```
 
 - Duplicate Element Scenario (too many tests)
 - Elements Aggregated on a Per Page Basis
 - Creating Page Objects
 
-Files:
-/cypress/integration/pageObjects/login.js
-/cypress/integration/mytests/pom.spec.ts
+Files
 
-```
+`/cypress/integration/pageObjects/login.js`
+
+`/cypress/integration/mytests/pom.spec.ts`
 
 ## **Working with Files (Fixtures)**
-
-```
 
 - Static Data (files, images, read/write operations)
 - /fixtures/userLoginDetails.json
@@ -514,15 +506,13 @@ Files:
   - root directory
   - file priority order
 
-```
-
 ## **Windows VDI Specific Issue**
 
 #### Steps to resolve Cypress related timeout/proxy errors in Windows VDI
 
 `1. Run the following command in terminal. It should open your .npmrc file in notepad`
 
-```
+```shell
 npm config edit
 ```
 
@@ -530,7 +520,7 @@ npm config edit
 
 Note: Replace <VDI-ID> with your VDI ID/Network ID and <VDI-PASSWORD> with your VDI password`
 
-```
+```shell
 proxy=http://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080/
 
 set HTTP_PROXY=http://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
@@ -542,7 +532,7 @@ set HTTPS_PROXY=https://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
 
 `4. Run the following commands in your terminal`
 
-```
+```shell
 npm cache clean --force
 cypress cache clear
 ```
@@ -551,15 +541,13 @@ cypress cache clear
 
 `/content-pages/e2e/`
 
-```
+```shell
 npm install
 ```
 
 `6. Open the following file in your node_modules where cypress is installed`
 
-```
-/content-pages/e2e/node_modules/cypress/lib/tasks/verify.js
-```
+`/content-pages/e2e/node_modules/cypress/lib/tasks/verify.js`
 
 Search for VERIFY_TEST_RUNNER_TIMEOUT variable which is set to 30000 (default value).
 Change it to 100000 (increase this value if you still get timeout errors after all the steps)
@@ -567,13 +555,13 @@ Save the file
 
 `7. Make sure your application is running before running Cypress. Usually it's`
 
-```
+```shell
 npm run start
 ```
 
 `8. Open a new terminal tab and verify your cypress installation with the following command`
 
-```
+```shell
 cypress verify
 ```
 
@@ -583,7 +571,7 @@ It should show something like this depending on your version
 
 `9. Open Cypress (depending on the script name in package.json). In this case it's cy:open in package.json. So, run`
 
-```
+```shell
 npm run cy:open
 ```
 
