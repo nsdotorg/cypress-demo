@@ -392,7 +392,7 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 `package.json (mac)`
 
-```
+```json
 "scripts": {
     "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports
          && mkdir cypress\\reports\\mochareports",
@@ -411,7 +411,7 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 1. Install Cucumber.js
 
-```
+```shell
 npm install --save-dev cypress-cucumber-preprocessor
 ```
 
@@ -419,19 +419,19 @@ npm install --save-dev cypress-cucumber-preprocessor
 
 `/cypress/plugins/index.js`
 
-```
-const cucumber = require('cypress-cucumber-preprocessor').default
+```javascript
+const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = (on, config) => {
-  on('file:preprocessor', cucumber())
-}
+  on("file:preprocessor", cucumber());
+};
 ```
 
 3. Add Support for .feature files
 
 `/root/cypress.json`
 
-```
+```json
 "testFiles": "**/*.{feature,features}"
 ```
 
@@ -439,7 +439,7 @@ module.exports = (on, config) => {
 
 `/root/package.json`
 
-```
+```json
 "cypress-cucumber-preprocessor": {
   "nonGlobalStepDefinitions": true
 }
@@ -458,7 +458,7 @@ module.exports = (on, config) => {
 
 Example Commands
 
-```
+```shell
 npx cypress-tags run -e TAGS='@smoke'
 npx cypress-tags run -e TAGS='@focus'
 npx cypress-tags run -e TAGS='not @smoke'
