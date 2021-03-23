@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://react-redux.realworld.io",
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "defaultCommandTimeout": 15000,
+  "pageLoadTimeout": 100000,
+  "ignoreTestFiles": ["*.md", "*.txt"],
+  "video": true,
+  "videoUploadOnPasses": false,
+  "waitForAnimations": true,
+  "chromeWebSecurity": true,
+  "viewportHeight": 660,
+  "viewportWidth": 1000,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "testFiles": "**/*.{feature,features}"
+}
