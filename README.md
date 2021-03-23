@@ -197,8 +197,12 @@ npx cypress run
 
 - Global Intellisense
 
+`jsconfig.json`
+
 ```
-jsconfig.json
+{
+  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+}
 ```
 
 ## **Collections vs Individual Tests**
