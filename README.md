@@ -251,8 +251,9 @@ Example
 - timeout settings
 - viewport settings
 - test retries
-- configuration within test files
-  - cypress.config(' ', )
+- and a lot more...
+
+Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/configuration#Options) for more info
 
 ## **then command**
 
