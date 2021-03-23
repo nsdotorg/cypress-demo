@@ -286,25 +286,25 @@ cy.get('@aliasName).first().click()
 
 **`CLI COMMANDS`**
 
-`1. Run all spec/test files of the project`
+**`1. Run all spec/test files of the project`**
 
 ```shell
 npx cypress run
 ```
 
-`2. Run all spec/test files of a particular directory`
+**`2. Run all spec/test files of a particular directory`**
 
 ```shell
 npx cypress run --spec "cypress/integration/examples/*.js"
 ```
 
-`3. Run single test file`
+**`3. Run single test file`**
 
 ```
 npx cypress run --spec "cypress/integration/examples/actions.spec.js"
 ```
 
-`4. Run or skip a particular test of a spec/test file \* use only or skip with decribe/it`
+**`4. Run or skip a particular test of a spec/test file \* use only or skip with decribe/it`**
 
 ```javascript
 it.only("GET - read", () => {
@@ -326,7 +326,7 @@ it.skip("GET - read", () => {
 });
 ```
 
-`5. Run test in a specific browser`
+**`5. Run test in a specific browser`**
 
 ```
 npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
