@@ -238,7 +238,9 @@ Add commands in `/support/commands.js`
   - after()
   - afterEach()
 
-- before - won't run any tests if included in a file when the test it contains fails
+Example:
+
+- before() - won't run any tests if included in a file when the test it contains fails
 
 ## **Configuration**
 
