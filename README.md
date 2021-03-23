@@ -304,7 +304,7 @@ npx cypress run --spec "cypress/integration/examples/*.js"
 npx cypress run --spec "cypress/integration/examples/actions.spec.js"
 ```
 
-**4. Run or skip a particular test of a spec/test file \* use only or skip with decribe/it**
+**4. Run or skip a particular test of a spec/test file - use only/skip with it/decribe**
 
 ```javascript
 it.only("GET - read", () => {
