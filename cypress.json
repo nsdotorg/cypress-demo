@@ -23,5 +23,6 @@
       "html": false,
       "json": true
     }
-  }
+  },
+  "testFiles": ["**/*.{feature,features}", "**/*.js"]
 }
