@@ -620,15 +620,10 @@ This should run Cypress without any errors.
 ## **Bonus**
 
 1. [BrowserStack's Software Quality Summit](https://www.browserstack.com/events/breakpoint?utm_source=home-page&utm_medium=new-promo-bar&utm_campaign=breakpoint-2021)
-
 1. [Github Satellite - India's Developer Community Virtual Conference](https://githubsatellite.com/?utm_source=github.com&utm_medium=referral&utm_campaign=satellite_banner_dashboard_d_1)
-
 1. [GraphQL YouTube Meetup](https://graphqlwroclaw.org/)
-
 1. [GraphQL Summit](https://summit.graphql.com/schedule)
-
 1. [Strapi Conference](https://conf.strapi.io/)
-
 1. [Adobe Summit—The Digital Experience Conference](https://summit.adobe.com/na/)
 
 ## **Demo Tab Links**
