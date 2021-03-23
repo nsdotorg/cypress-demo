@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-03-23T07:54:11.250Z",
-    "end": "2021-03-23T07:54:13.385Z",
-    "duration": 2135,
+    "failures": 0,
+    "start": "2021-03-23T08:18:34.082Z",
+    "end": "2021-03-23T08:18:37.044Z",
+    "duration": 2962,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cdd0bf72-b1db-4ca4-a8c4-31d5532ccb18",
+      "uuid": "3a582784-a043-43a2-96a8-b274a9926fbb",
       "title": "",
       "fullFile": "cypress/integration/examples/aliasing.spec.js",
       "file": "cypress/integration/examples/aliasing.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "14b5adfb-4b48-49bd-8e19-619088414aa5",
+          "uuid": "08e58f08-ee29-4a2d-bdc0-b03097ddc6af",
           "title": "Aliasing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": ".as() - alias a DOM element for later use",
               "fullTitle": "Aliasing .as() - alias a DOM element for later use",
               "timedOut": null,
-              "duration": 562,
+              "duration": 629,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// https://on.cypress.io/as\n// Alias a DOM element for use later\n// We don't have to traverse to the element\n// later in our code, we reference it with @\ncy.get(\".as-table\").find(\"tbody>tr\").first().find(\"td\").first().find(\"button\").as(\"firstBtn\"); // when we reference the alias, we place an\n// @ in front of its name\ncy.get(\"@firstBtn\").click();\ncy.get(\"@firstBtn\").should(\"have.class\", \"btn-success\").and(\"contain\", \"Changed\");",
               "err": {},
-              "uuid": "66b7a55f-0064-4b7f-bdec-0a88f2165437",
-              "parentUUID": "14b5adfb-4b48-49bd-8e19-619088414aa5",
+              "uuid": "9dd54cd1-3373-4f13-8f26-f9b1d9e490c4",
+              "parentUUID": "08e58f08-ee29-4a2d-bdc0-b03097ddc6af",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,30 @@
               "title": ".as() - alias a route for later use",
               "fullTitle": "Aliasing .as() - alias a route for later use",
               "timedOut": null,
-              "duration": 467,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 1249,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "// Alias the route to wait for its response\ncy.intercept(\"GET\", \"**/comments/*\").as(\"getComment\"); // we have code that gets a comment when\n// the button is clicked in scripts.js\ncy.get(\".network-btn\").click(); // https://on.cypress.io/wait\ncy.wait(\"@getComment\").its(\"response.statusCode\").should(\"eq\", 200);",
-              "err": {
-                "message": "TypeError: cy.intercept is not a function",
-                "estack": "TypeError: cy.intercept is not a function\n    at Context.<anonymous> (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/aliasing.spec.js-416:22:8)",
-                "diff": null
-              },
-              "uuid": "05fae103-8636-490f-98a7-9aedfd601068",
-              "parentUUID": "14b5adfb-4b48-49bd-8e19-619088414aa5",
+              "err": {},
+              "uuid": "54f83808-ad78-496d-b3da-3852d590796d",
+              "parentUUID": "08e58f08-ee29-4a2d-bdc0-b03097ddc6af",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "66b7a55f-0064-4b7f-bdec-0a88f2165437"
+            "9dd54cd1-3373-4f13-8f26-f9b1d9e490c4",
+            "54f83808-ad78-496d-b3da-3852d590796d"
           ],
-          "failures": [
-            "05fae103-8636-490f-98a7-9aedfd601068"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1029,
+          "duration": 1878,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +97,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

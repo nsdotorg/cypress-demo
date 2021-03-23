@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-03-23T07:59:14.252Z",
-    "end": "2021-03-23T07:59:18.636Z",
-    "duration": 4384,
+    "failures": 1,
+    "start": "2021-03-23T08:23:41.452Z",
+    "end": "2021-03-23T08:24:01.664Z",
+    "duration": 20212,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f80971a2-4fe0-4530-807c-46b1b31337d5",
+      "uuid": "25d09e26-fd63-4902-87d6-c4cca98d6c11",
       "title": "",
       "fullFile": "cypress/integration/tests/uploadFiles.spec.js",
       "file": "cypress/integration/tests/uploadFiles.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f5c8f23d-98b8-47c5-8de7-f09d1e0f0a8c",
+          "uuid": "e4ddc4db-00d9-4eb9-9e0a-08076d8dc8a5",
           "title": "Working with plugins",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "File upload",
               "fullTitle": "Working with plugins File upload",
               "timedOut": null,
-              "duration": 2118,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 17565,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://cgi-lib.berkeley.edu/ex/fup.html\"); // upload file\nvar fileName = \"dummy.pdf\";\n/* For cypress-file-upload version < 4.0.0\n    cy.fixture(fileName).then(fileContent => {\n        cy.get('[type=\"file\"]').upload({ fileContent, fileName, mimeType: 'application/pdf' });\n    })*/\n// For cypress-file-upload version > 4.0.0\ncy.get('[type=\"file\"]').attachFile(fileName);\ncy.get('[type=\"submit\"]').click();\ncy.contains(\"You've uploaded a file.  Your notes on the file were:\");",
-              "err": {},
-              "uuid": "03f3c862-a018-4b1f-a705-85a23e1a06aa",
-              "parentUUID": "f5c8f23d-98b8-47c5-8de7-f09d1e0f0a8c",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'You've uploaded a file.  Your notes on the file were:' but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'You've uploaded a file.  Your notes on the file were:' but never did.\n    at Context.eval (https://cgi-lib.berkeley.edu/__cypress/tests?p=cypress/integration/tests/uploadFiles.spec.js:18:8)",
+                "diff": null
+              },
+              "uuid": "e1620a72-46cf-430f-9793-0e7240360317",
+              "parentUUID": "e4ddc4db-00d9-4eb9-9e0a-08076d8dc8a5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "03f3c862-a018-4b1f-a705-85a23e1a06aa"
+          "passes": [],
+          "failures": [
+            "e1620a72-46cf-430f-9793-0e7240360317"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2118,
+          "duration": 17565,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -78,7 +82,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

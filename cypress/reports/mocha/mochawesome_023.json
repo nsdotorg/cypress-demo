@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 2,
-    "start": "2021-03-23T07:56:25.244Z",
-    "end": "2021-03-23T07:56:44.350Z",
-    "duration": 19106,
+    "start": "2021-03-23T08:21:20.385Z",
+    "end": "2021-03-23T08:21:39.893Z",
+    "duration": 19508,
     "testsRegistered": 3,
     "passPercent": 33.33333333333333,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bdeee298-b70d-4768-a1bc-d94a4e4b9dcc",
+      "uuid": "0c45e4de-34a2-48a4-8096-cfee815d059c",
       "title": "",
       "fullFile": "cypress/integration/tests/api.spec.js",
       "file": "cypress/integration/tests/api.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3d586541-c56d-4ee7-8ddb-490b6508054f",
+          "uuid": "956816d5-53b7-4e80-b997-226b8682391f",
           "title": "API Testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET - read",
               "fullTitle": "API Testing GET - read",
               "timedOut": null,
-              "duration": 1363,
+              "duration": 1431,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.request(\"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
               "err": {},
-              "uuid": "aa0cb01d-86ef-4c9c-8a0d-4b0c9ddc55fd",
-              "parentUUID": "3d586541-c56d-4ee7-8ddb-490b6508054f",
+              "uuid": "77ffca21-824c-42b6-8dd3-4d780a139351",
+              "parentUUID": "956816d5-53b7-4e80-b997-226b8682391f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "POST - create",
               "fullTitle": "API Testing POST - create",
               "timedOut": null,
-              "duration": 1308,
+              "duration": 1356,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -65,12 +65,12 @@
               "context": null,
               "code": "var item = {\n  name: \"test\",\n  salary: \"123\",\n  age: \"23\"\n};\ncy.request(\"POST\", \"/create\", item).its(\"body\").its(\"data\") // .should('deep.eq', item)\n.should(\"include\", {\n  name: \"test\"\n});",
               "err": {
-                "message": "CypressError: cy.request() failed on:\n\nhttp://dummy.restapiexample.com/api/v1/create\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not '2xx' or '3xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://dummy.restapiexample.com/api/v1/create\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/3.8.3 Chrome/78.0.3904.130 Electron/7.1.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 41\n}\nBody: {\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 429 - Too Many Requests\nHeaders: {\n  \"content-encoding\": \"gzip\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"date\": \"Tue, 23 Mar 2021 07:56:27 GMT\",\n  \"display\": \"staticcontent_sol\",\n  \"expires\": \"Mon, 22 Mar 2021 07:56:27 GMT\",\n  \"host-header\": \"c2hhcmVkLmJsdWVob3N0LmNvbQ==\",\n  \"pagespeed\": \"off\",\n  \"referrer-policy\": \"\",\n  \"response\": \"429\",\n  \"retry-after\": \"22\",\n  \"server\": \"nginx/1.16.0\",\n  \"set-cookie\": [\n    \"ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezepvv=0; Path=/; Domain=restapiexample.com; Expires=Wed, 24 Mar 2021 07:56:27 UTC\",\n    \"ezovid_133674=1554598548; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"lp_133674=http://dummy.restapiexample.com/api/v1/create; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezovuuidtime_133674=1616486187; Path=/; Domain=restapiexample.com; Expires=Thu, 25 Mar 2021 07:56:27 UTC\",\n    \"ezovuuid_133674=17fa7d0d-3da7-4322-7723-0dd8dabcd9bb; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Mar 2022 07:56:27 GMT\"\n  ],\n  \"vary\": \"Accept-Encoding, Accept-Encoding,Origin\",\n  \"x-ezoic-cdn\": \"Miss\",\n  \"x-middleton-display\": \"staticcontent_sol\",\n  \"x-middleton-response\": \"429\",\n  \"x-ratelimit-limit\": \"60\",\n  \"x-ratelimit-remaining\": \"57\",\n  \"x-ratelimit-reset\": \"1616486209\",\n  \"x-sol\": \"pub_site\",\n  \"content-length\": \"588\"\n}\nBody: <!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel=\"dns-prefetch\" href=\"//fonts.gstatic.com\">\n        <link href=\"https://fonts.googleapis.com/css?family=Nunito\" rel=\"stylesheet\">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: 'Nunito', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class=\"flex-center position-ref full-height\">\n            <div class=\"code\">\n                429            </div>\n\n            <div class=\"message\" style=\"padding: 10px;\">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>",
-                "estack": "CypressError: cy.request() failed on:\n\nhttp://dummy.restapiexample.com/api/v1/create\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not '2xx' or '3xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://dummy.restapiexample.com/api/v1/create\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/3.8.3 Chrome/78.0.3904.130 Electron/7.1.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 41\n}\nBody: {\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 429 - Too Many Requests\nHeaders: {\n  \"content-encoding\": \"gzip\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"date\": \"Tue, 23 Mar 2021 07:56:27 GMT\",\n  \"display\": \"staticcontent_sol\",\n  \"expires\": \"Mon, 22 Mar 2021 07:56:27 GMT\",\n  \"host-header\": \"c2hhcmVkLmJsdWVob3N0LmNvbQ==\",\n  \"pagespeed\": \"off\",\n  \"referrer-policy\": \"\",\n  \"response\": \"429\",\n  \"retry-after\": \"22\",\n  \"server\": \"nginx/1.16.0\",\n  \"set-cookie\": [\n    \"ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezepvv=0; Path=/; Domain=restapiexample.com; Expires=Wed, 24 Mar 2021 07:56:27 UTC\",\n    \"ezovid_133674=1554598548; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"lp_133674=http://dummy.restapiexample.com/api/v1/create; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezovuuidtime_133674=1616486187; Path=/; Domain=restapiexample.com; Expires=Thu, 25 Mar 2021 07:56:27 UTC\",\n    \"ezovuuid_133674=17fa7d0d-3da7-4322-7723-0dd8dabcd9bb; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:26:27 UTC\",\n    \"ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Mar 2022 07:56:27 GMT\"\n  ],\n  \"vary\": \"Accept-Encoding, Accept-Encoding,Origin\",\n  \"x-ezoic-cdn\": \"Miss\",\n  \"x-middleton-display\": \"staticcontent_sol\",\n  \"x-middleton-response\": \"429\",\n  \"x-ratelimit-limit\": \"60\",\n  \"x-ratelimit-remaining\": \"57\",\n  \"x-ratelimit-reset\": \"1616486209\",\n  \"x-sol\": \"pub_site\",\n  \"content-length\": \"588\"\n}\nBody: <!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel=\"dns-prefetch\" href=\"//fonts.gstatic.com\">\n        <link href=\"https://fonts.googleapis.com/css?family=Nunito\" rel=\"stylesheet\">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: 'Nunito', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class=\"flex-center position-ref full-height\">\n            <div class=\"code\">\n                429            </div>\n\n            <div class=\"message\" style=\"padding: 10px;\">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:72496:18\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118320:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "CypressError: `cy.request()` failed on:\n\nhttp://dummy.restapiexample.com/api/v1/create\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://dummy.restapiexample.com/api/v1/create\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.8.0 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 41\n}\nBody: {\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 429 - Too Many Requests\nHeaders: {\n  \"content-encoding\": \"gzip\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"date\": \"Tue, 23 Mar 2021 08:21:22 GMT\",\n  \"display\": \"staticcontent_sol\",\n  \"expires\": \"Mon, 22 Mar 2021 08:21:22 GMT\",\n  \"host-header\": \"c2hhcmVkLmJsdWVob3N0LmNvbQ==\",\n  \"pagespeed\": \"off\",\n  \"referrer-policy\": \"\",\n  \"response\": \"429\",\n  \"retry-after\": \"21\",\n  \"server\": \"nginx/1.16.0\",\n  \"set-cookie\": [\n    \"ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezepvv=0; Path=/; Domain=restapiexample.com; Expires=Wed, 24 Mar 2021 08:21:22 UTC\",\n    \"ezovid_133674=686863415; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"lp_133674=http://dummy.restapiexample.com/api/v1/create; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezovuuidtime_133674=1616487682; Path=/; Domain=restapiexample.com; Expires=Thu, 25 Mar 2021 08:21:22 UTC\",\n    \"ezovuuid_133674=28cb8ec9-b3ab-4b6f-42da-0d0a4008461a; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Mar 2022 08:21:22 GMT\"\n  ],\n  \"vary\": \"Accept-Encoding, Accept-Encoding,Origin\",\n  \"x-ezoic-cdn\": \"Miss\",\n  \"x-middleton-display\": \"staticcontent_sol\",\n  \"x-middleton-response\": \"429\",\n  \"x-ratelimit-limit\": \"60\",\n  \"x-ratelimit-remaining\": \"56\",\n  \"x-ratelimit-reset\": \"1616487703\",\n  \"x-sol\": \"pub_site\",\n  \"content-length\": \"588\"\n}\nBody: <!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel=\"dns-prefetch\" href=\"//fonts.gstatic.com\">\n        <link href=\"https://fonts.googleapis.com/css?family=Nunito\" rel=\"stylesheet\">\n\n        <!-- Styles -->\n        <style>\n  html, body {\n      background-color: #fff;\n      color: #636b6f;\n      font-family: 'Nunito', sans-serif;\n      font-weight: 100;\n      height: 100vh;\n      margin: 0;\n  }\n\n  .full-height {\n      height: 100vh;\n  }\n\n  .flex-center {\n      align-items: center;\n      display: flex;\n      justify-content: center;\n  }\n\n  .position-ref {\n      position: relative;\n  }\n\n  .code {\n      border-right: 2px solid;\n      font-size: 26px;\n      padding: 0 15px 0 15px;\n      text-align: center;\n  }\n\n  .message {\n      font-size: 18px;\n      text-align: center;\n  }\n        </style>\n    </head>\n    <body>\n        <div class=\"flex-center position-ref full-height\">\n  <div class=\"code\">\n      429            </div>\n\n  <div class=\"message\" style=\"padding: 10px;\">\n      Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttp://dummy.restapiexample.com/api/v1/create\n\nThe response we received from your web server was:\n\n  > 429: Too Many Requests\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://dummy.restapiexample.com/api/v1/create\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.8.0 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 41\n}\nBody: {\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 429 - Too Many Requests\nHeaders: {\n  \"content-encoding\": \"gzip\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"date\": \"Tue, 23 Mar 2021 08:21:22 GMT\",\n  \"display\": \"staticcontent_sol\",\n  \"expires\": \"Mon, 22 Mar 2021 08:21:22 GMT\",\n  \"host-header\": \"c2hhcmVkLmJsdWVob3N0LmNvbQ==\",\n  \"pagespeed\": \"off\",\n  \"referrer-policy\": \"\",\n  \"response\": \"429\",\n  \"retry-after\": \"21\",\n  \"server\": \"nginx/1.16.0\",\n  \"set-cookie\": [\n    \"ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezepvv=0; Path=/; Domain=restapiexample.com; Expires=Wed, 24 Mar 2021 08:21:22 UTC\",\n    \"ezovid_133674=686863415; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"lp_133674=http://dummy.restapiexample.com/api/v1/create; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezovuuidtime_133674=1616487682; Path=/; Domain=restapiexample.com; Expires=Thu, 25 Mar 2021 08:21:22 UTC\",\n    \"ezovuuid_133674=28cb8ec9-b3ab-4b6f-42da-0d0a4008461a; Path=/; Domain=restapiexample.com; Expires=Tue, 23 Mar 2021 08:51:22 UTC\",\n    \"ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Mar 2022 08:21:22 GMT\"\n  ],\n  \"vary\": \"Accept-Encoding, Accept-Encoding,Origin\",\n  \"x-ezoic-cdn\": \"Miss\",\n  \"x-middleton-display\": \"staticcontent_sol\",\n  \"x-middleton-response\": \"429\",\n  \"x-ratelimit-limit\": \"60\",\n  \"x-ratelimit-remaining\": \"56\",\n  \"x-ratelimit-reset\": \"1616487703\",\n  \"x-sol\": \"pub_site\",\n  \"content-length\": \"588\"\n}\nBody: <!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel=\"dns-prefetch\" href=\"//fonts.gstatic.com\">\n        <link href=\"https://fonts.googleapis.com/css?family=Nunito\" rel=\"stylesheet\">\n\n        <!-- Styles -->\n        <style>\n  html, body {\n      background-color: #fff;\n      color: #636b6f;\n      font-family: 'Nunito', sans-serif;\n      font-weight: 100;\n      height: 100vh;\n      margin: 0;\n  }\n\n  .full-height {\n      height: 100vh;\n  }\n\n  .flex-center {\n      align-items: center;\n      display: flex;\n      justify-content: center;\n  }\n\n  .position-ref {\n      position: relative;\n  }\n\n  .code {\n      border-right: 2px solid;\n      font-size: 26px;\n      padding: 0 15px 0 15px;\n      text-align: center;\n  }\n\n  .message {\n      font-size: 18px;\n      text-align: center;\n  }\n        </style>\n    </head>\n    <body>\n        <div class=\"flex-center position-ref full-height\">\n  <div class=\"code\">\n      429            </div>\n\n  <div class=\"message\" style=\"padding: 10px;\">\n      Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n\nhttps://on.cypress.io/request\n    at https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:160310:21\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8882:18)\n    at _drainQueueStep (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/api.spec.js:20:8)",
                 "diff": null
               },
-              "uuid": "b416567f-1df7-4c90-9cb2-d32e62da0e18",
-              "parentUUID": "3d586541-c56d-4ee7-8ddb-490b6508054f",
+              "uuid": "e4aa9d12-d377-47af-87a4-d06573fd6cc8",
+              "parentUUID": "956816d5-53b7-4e80-b997-226b8682391f",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +78,7 @@
               "title": "PUT - update",
               "fullTitle": "API Testing PUT - update",
               "timedOut": null,
-              "duration": 16397,
+              "duration": 16398,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -87,27 +87,27 @@
               "context": null,
               "code": "var item = {\n  name: \"test1\"\n};\ncy.request({\n  method: \"PUT\",\n  url: \"/update/1\",\n  body: item,\n  failOnStatusCode: false\n}).its(\"status\").should(\"eq\", 401);",
               "err": {
-                "message": "CypressError: Timed out retrying: expected 429 to equal 401",
-                "estack": "CypressError: Timed out retrying: expected 429 to equal 401\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
-                "diff": null
+                "message": "AssertionError: Timed out retrying after 15000ms: expected 429 to equal 401",
+                "estack": "AssertionError: Timed out retrying after 15000ms: expected 429 to equal 401\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/api.spec.js:34:22)",
+                "diff": "- 429\n+ 401\n"
               },
-              "uuid": "af8d6de9-07c3-47cd-9e59-99f0b3d557e8",
-              "parentUUID": "3d586541-c56d-4ee7-8ddb-490b6508054f",
+              "uuid": "0ee1b735-a19f-4daf-8858-a37e34b3ebc8",
+              "parentUUID": "956816d5-53b7-4e80-b997-226b8682391f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aa0cb01d-86ef-4c9c-8a0d-4b0c9ddc55fd"
+            "77ffca21-824c-42b6-8dd3-4d780a139351"
           ],
           "failures": [
-            "b416567f-1df7-4c90-9cb2-d32e62da0e18",
-            "af8d6de9-07c3-47cd-9e59-99f0b3d557e8"
+            "e4aa9d12-d377-47af-87a4-d06573fd6cc8",
+            "0ee1b735-a19f-4daf-8858-a37e34b3ebc8"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 19068,
+          "duration": 19185,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -125,7 +125,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

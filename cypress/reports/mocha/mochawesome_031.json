@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 3,
-    "start": "2021-03-23T07:59:20.538Z",
-    "end": "2021-03-23T08:00:04.538Z",
-    "duration": 44000,
+    "start": "2021-03-23T08:24:06.426Z",
+    "end": "2021-03-23T08:24:50.287Z",
+    "duration": 43861,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b77096e2-56e6-47a9-ac83-b2b718a7c9b5",
+      "uuid": "b4ed53f6-5929-4e9d-b38f-8a67efaa2da6",
       "title": "",
       "fullFile": "cypress/integration/tests/url.spec.js",
       "file": "cypress/integration/tests/url.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "48ce2514-45a0-44dc-9493-b351d1280129",
+          "uuid": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
           "title": "Create and mark-unmark as favorite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sign in",
               "fullTitle": "Create and mark-unmark as favorite Sign in",
               "timedOut": null,
-              "duration": 13201,
+              "duration": 13007,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.visit(\"https://react-redux.realworld.io/#/login\");\ncy.title().should(\"eq\", \"Conduit\");\ncy.location(\"protocol\").should(\"eq\", \"https:\");\ncy.get('input[type=\"email\"]').type(\"cypress.demotests@gmail.com\");\ncy.get('input[type=\"password\"]').type(\"admin123\");\ncy.get(\".btn\").contains(\"Sign in\").should(\"be.visible\").click();\ncy.contains(\"Your Feed\", {\n  timeout: 10000\n}).should(\"be.visible\");",
               "err": {
-                "message": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.",
-                "estack": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:15:8)",
                 "diff": null
               },
-              "uuid": "ab236fed-8275-42a6-8857-a7ccc08baad8",
-              "parentUUID": "48ce2514-45a0-44dc-9493-b351d1280129",
+              "uuid": "6a1a3690-6a64-44d2-8ec9-0e84414e677d",
+              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Create a post",
               "fullTitle": "Create and mark-unmark as favorite Create a post",
               "timedOut": null,
-              "duration": 15371,
+              "duration": 15331,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,12 +69,12 @@
               "context": null,
               "code": "cy.contains(\"New Post\").click(); //cy.location('hash').should('include','#/editor')\ncy.hash().should(\"include\", \"#/editor\");\ncy.get('input[placeholder=\"Article Title\"]').type(\"Test\");\ncy.get('input[placeholder=\"What\\'s this article about?\"]').type(\"Test 1\");\ncy.get('textarea[placeholder=\"Write your article (in markdown)\"]').type(\"Test 2\");\ncy.contains(\"Publish Article\").click();\ncy.url().should(\"include\", \"article\");",
               "err": {
-                "message": "CypressError: Timed out retrying: Expected to find content: 'New Post' but never did.",
-                "estack": "CypressError: Timed out retrying: Expected to find content: 'New Post' but never did.\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'New Post' but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'New Post' but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:18:8)",
                 "diff": null
               },
-              "uuid": "2ff8ab0e-2b83-43f1-a547-e763ba5c4f7e",
-              "parentUUID": "48ce2514-45a0-44dc-9493-b351d1280129",
+              "uuid": "1701adc3-773c-47d1-841f-cedb59a48308",
+              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
               "isHook": false,
               "skipped": false
             },
@@ -82,7 +82,7 @@
               "title": "Mark-unmark as favorite",
               "fullTitle": "Create and mark-unmark as favorite Mark-unmark as favorite",
               "timedOut": null,
-              "duration": 15394,
+              "duration": 15347,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -91,12 +91,12 @@
               "context": null,
               "code": "cy.get(\".nav-link\").contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\"); //cy.go(-1)\n//cy.go('forward')\n//cy.go(1)",
               "err": {
-                "message": "CypressError: Timed out retrying: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.",
-                "estack": "CypressError: Timed out retrying: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
                 "diff": null
               },
-              "uuid": "80ef909b-f6ba-4a96-bbbd-cd5eda55c137",
-              "parentUUID": "48ce2514-45a0-44dc-9493-b351d1280129",
+              "uuid": "c451289f-e2b8-42a1-b366-e31573d1ff52",
+              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
               "isHook": false,
               "skipped": false
             }
@@ -104,13 +104,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ab236fed-8275-42a6-8857-a7ccc08baad8",
-            "2ff8ab0e-2b83-43f1-a547-e763ba5c4f7e",
-            "80ef909b-f6ba-4a96-bbbd-cd5eda55c137"
+            "6a1a3690-6a64-44d2-8ec9-0e84414e677d",
+            "1701adc3-773c-47d1-841f-cedb59a48308",
+            "c451289f-e2b8-42a1-b366-e31573d1ff52"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 43966,
+          "duration": 43685,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -128,7 +128,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

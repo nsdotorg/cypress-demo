@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-03-23T07:55:48.612Z",
-    "end": "2021-03-23T07:55:55.274Z",
-    "duration": 6662,
+    "failures": 0,
+    "start": "2021-03-23T08:20:37.896Z",
+    "end": "2021-03-23T08:20:45.480Z",
+    "duration": 7584,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ba604679-0f93-41f4-b431-94e2985956c8",
+      "uuid": "9dc81deb-8692-4e67-afb6-c89d01d06be8",
       "title": "",
       "fullFile": "cypress/integration/examples/waiting.spec.js",
       "file": "cypress/integration/examples/waiting.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+          "uuid": "8b22946c-d757-461d-97f1-777ad51eb60b",
           "title": "Waiting",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.wait() - wait for a specific amount of time",
               "fullTitle": "Waiting cy.wait() - wait for a specific amount of time",
               "timedOut": null,
-              "duration": 4930,
+              "duration": 5540,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\".wait-input1\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input2\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input3\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);",
               "err": {},
-              "uuid": "58d50735-c003-487c-bb12-1894ab4dc86a",
-              "parentUUID": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+              "uuid": "84e128d5-a7de-4eb5-b6da-bc9b5624cbc6",
+              "parentUUID": "8b22946c-d757-461d-97f1-777ad51eb60b",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,30 @@
               "title": "cy.wait() - wait for a specific route",
               "fullTitle": "Waiting cy.wait() - wait for a specific route",
               "timedOut": null,
-              "duration": 581,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 804,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "// Listen to GET to comments/1\ncy.intercept(\"GET\", \"**/comments/*\").as(\"getComment\"); // we have code that gets a comment when\n// the button is clicked in scripts.js\ncy.get(\".network-btn\").click(); // wait for GET comments/1\ncy.wait(\"@getComment\").its(\"response.statusCode\").should(\"be.oneOf\", [200, 304]);",
-              "err": {
-                "message": "TypeError: cy.intercept is not a function",
-                "estack": "TypeError: cy.intercept is not a function\n    at Context.<anonymous> (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/waiting.spec.js-599:22:8)",
-                "diff": null
-              },
-              "uuid": "f0811fab-1f53-4366-b6a1-6c2cd59b0e59",
-              "parentUUID": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+              "err": {},
+              "uuid": "ee3a330f-83fd-4dd4-b0f7-4435706581e9",
+              "parentUUID": "8b22946c-d757-461d-97f1-777ad51eb60b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "58d50735-c003-487c-bb12-1894ab4dc86a"
+            "84e128d5-a7de-4eb5-b6da-bc9b5624cbc6",
+            "ee3a330f-83fd-4dd4-b0f7-4435706581e9"
           ],
-          "failures": [
-            "f0811fab-1f53-4366-b6a1-6c2cd59b0e59"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5511,
+          "duration": 6344,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +97,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

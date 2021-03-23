@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T07:56:03.738Z",
-    "end": "2021-03-23T07:56:07.024Z",
-    "duration": 3286,
+    "start": "2021-03-23T08:20:56.963Z",
+    "end": "2021-03-23T08:20:59.849Z",
+    "duration": 2886,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d1500a27-11fe-4966-a75d-ae70be268a65",
+      "uuid": "aaad21b6-af2c-4e2b-bd59-814163a1ec1a",
       "title": "",
       "fullFile": "cypress/integration/tests/abcTest.spec.js",
       "file": "cypress/integration/tests/abcTest.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c184e51a-85c1-4868-9efe-1da8360c1d99",
+          "uuid": "b34e4b4d-9f45-47fc-85b3-669c5d724636",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sign in",
               "fullTitle": "Login Sign in",
               "timedOut": null,
-              "duration": 3263,
+              "duration": 2857,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://react-redux.realworld.io/#/login\");\ncy.get('input[type=\"email\"]').type(\"cypress.demotests@gmail.com\");\ncy.get('input[type=\"password\"]').type(\"admin123\");\ncy.get(\".btn\").contains(\"Sign in\").should(\"be.visible\").click();",
               "err": {},
-              "uuid": "c654fae1-61fd-4da2-a3bb-0fa30f88bf21",
-              "parentUUID": "c184e51a-85c1-4868-9efe-1da8360c1d99",
+              "uuid": "f5dc7231-40fb-46e8-bdf3-933fac44960b",
+              "parentUUID": "b34e4b4d-9f45-47fc-85b3-669c5d724636",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c654fae1-61fd-4da2-a3bb-0fa30f88bf21"
+            "f5dc7231-40fb-46e8-bdf3-933fac44960b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3263,
+          "duration": 2857,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -78,7 +78,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

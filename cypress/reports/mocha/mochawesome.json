@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-23T07:52:05.843Z",
-    "end": "2021-03-23T07:52:19.172Z",
-    "duration": 13329,
+    "start": "2021-03-23T08:17:53.523Z",
+    "end": "2021-03-23T08:18:08.138Z",
+    "duration": 14615,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "efcec7e0-0dab-4a02-b035-1b39604d40e1",
+      "uuid": "fd570fc5-8bec-4fc5-941b-0dec70f72b84",
       "title": "",
       "fullFile": "cypress/integration/zeroTest.feature",
       "file": "cypress/integration/zeroTest.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "95d3f64f-b662-4d66-806b-e8278b29c130",
+          "uuid": "f29015bc-9867-4158-8eef-fd5bf1e4bad1",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "Conduit Login",
               "fullTitle": "Login Conduit Login",
               "timedOut": null,
-              "duration": 13308,
+              "duration": 14479,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {
-                "message": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.",
-                "estack": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest.feature:52:6)\n    at Context.resolveAndRunStepDefinition (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest.feature:10439:9)\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest.feature:9780:35)",
                 "diff": null
               },
-              "uuid": "394f009d-a501-46f0-a279-3ef4ab2e93ec",
-              "parentUUID": "95d3f64f-b662-4d66-806b-e8278b29c130",
+              "uuid": "be11d371-fc85-4344-829f-6f7fa90d194b",
+              "parentUUID": "f29015bc-9867-4158-8eef-fd5bf1e4bad1",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "394f009d-a501-46f0-a279-3ef4ab2e93ec"
+            "be11d371-fc85-4344-829f-6f7fa90d194b"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 13308,
+          "duration": 14479,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -82,7 +82,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

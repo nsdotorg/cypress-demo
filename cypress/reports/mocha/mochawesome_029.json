@@ -1,24 +1,24 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 0,
+    "tests": 1,
     "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-03-23T07:58:57.858Z",
-    "end": "2021-03-23T07:59:11.170Z",
-    "duration": 13312,
+    "failures": 1,
+    "start": "2021-03-23T08:23:24.575Z",
+    "end": "2021-03-23T08:23:37.222Z",
+    "duration": 12647,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
-    "other": 1,
-    "hasOther": true,
-    "skipped": 2,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
     "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "a4664268-4a1d-42bb-a898-1bf183a7be90",
+      "uuid": "aa3de9cc-2a25-425b-939c-68447d726230",
       "title": "",
       "fullFile": "cypress/integration/tests/thenCommand.spec.js",
       "file": "cypress/integration/tests/thenCommand.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae4101f8-8ea7-4018-804a-315981c27ced",
+          "uuid": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
           "title": "Create and mark-unmark as favorite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Create a post",
               "fullTitle": "Create and mark-unmark as favorite Create a post",
               "timedOut": null,
-              "duration": 13290,
+              "duration": 12411,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.get(\"ul.navbar-nav\").children().contains(\"New Post\").click();\ncy.hash().should(\"include\", \"#/editor\");\ncy.get(\"form\").within(function ($form) {\n  cy.get(\"input\").first().type(\"Test\");\n  cy.get(\"input\").eq(1).type(\"Test 1\");\n  cy.get(\"textarea\").last().type(\"Test 2\");\n  cy.contains(\"Publish Article\").click();\n});\ncy.url().should(\"include\", \"article\");",
               "err": {
-                "message": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Create and mark-unmark as f...'",
-                "estack": "CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Create and mark-unmark as f...'\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Create and mark-unmark as f...`",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Create and mark-unmark as f...`\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/support/index.js:18:6)",
                 "diff": null
               },
-              "uuid": "e9b4e803-2443-4122-b334-35b852f36bc6",
-              "parentUUID": "ae4101f8-8ea7-4018-804a-315981c27ced",
+              "uuid": "bef57b52-7696-412b-a2d0-907949fc0449",
+              "parentUUID": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
               "isHook": false,
               "skipped": false
             },
@@ -69,8 +69,8 @@
               "context": null,
               "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
-              "uuid": "ba7df0e1-2395-46af-9e2d-ec24859385b0",
-              "parentUUID": "ae4101f8-8ea7-4018-804a-315981c27ced",
+              "uuid": "6e369cb8-24a8-45f0-8b17-e5bec96c88ae",
+              "parentUUID": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
               "isHook": false,
               "skipped": true
             }
@@ -78,13 +78,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e9b4e803-2443-4122-b334-35b852f36bc6"
+            "bef57b52-7696-412b-a2d0-907949fc0449"
           ],
           "pending": [],
           "skipped": [
-            "ba7df0e1-2395-46af-9e2d-ec24859385b0"
+            "6e369cb8-24a8-45f0-8b17-e5bec96c88ae"
           ],
-          "duration": 13290,
+          "duration": 12411,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -102,7 +102,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

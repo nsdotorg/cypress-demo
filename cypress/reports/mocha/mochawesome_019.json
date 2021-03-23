@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T07:55:57.864Z",
-    "end": "2021-03-23T07:55:59.893Z",
-    "duration": 2029,
+    "start": "2021-03-23T08:20:48.651Z",
+    "end": "2021-03-23T08:20:50.700Z",
+    "duration": 2049,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2d5ffc96-90e4-448e-a999-59ce866288af",
+      "uuid": "40a8f6f4-dc69-46d4-a24a-e42667cb1486",
       "title": "",
       "fullFile": "cypress/integration/examples/window.spec.js",
       "file": "cypress/integration/examples/window.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0eebfbbd-8a1f-4a68-acd2-7e23d913dee7",
+          "uuid": "35339315-28a6-439c-9f7c-ff613caad5b2",
           "title": "Window",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.window() - get the global window object",
               "fullTitle": "Window cy.window() - get the global window object",
               "timedOut": null,
-              "duration": 498,
+              "duration": 375,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// https://on.cypress.io/window\ncy.window().should(\"have.property\", \"top\");",
               "err": {},
-              "uuid": "6a2cb4f6-d4bf-41f7-8544-aafc3bb8112f",
-              "parentUUID": "0eebfbbd-8a1f-4a68-acd2-7e23d913dee7",
+              "uuid": "3260e7c2-b699-49ab-af50-b7d5f803fdd5",
+              "parentUUID": "35339315-28a6-439c-9f7c-ff613caad5b2",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "cy.document() - get the document object",
               "fullTitle": "Window cy.document() - get the document object",
               "timedOut": null,
-              "duration": 213,
+              "duration": 169,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "// https://on.cypress.io/document\ncy.document().should(\"have.property\", \"charset\").and(\"eq\", \"UTF-8\");",
               "err": {},
-              "uuid": "475af9d5-9ab5-48a3-a223-b5e94ac6565d",
-              "parentUUID": "0eebfbbd-8a1f-4a68-acd2-7e23d913dee7",
+              "uuid": "1c66ee77-21e5-4ffc-9255-6bf4c8d05ac6",
+              "parentUUID": "35339315-28a6-439c-9f7c-ff613caad5b2",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "cy.title() - get the title",
               "fullTitle": "Window cy.title() - get the title",
               "timedOut": null,
-              "duration": 181,
+              "duration": 84,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "// https://on.cypress.io/title\ncy.title().should(\"include\", \"Kitchen Sink\");",
               "err": {},
-              "uuid": "4a689a81-f805-4883-b54e-046f0200f844",
-              "parentUUID": "0eebfbbd-8a1f-4a68-acd2-7e23d913dee7",
+              "uuid": "1fc6528e-6865-46cb-b4e5-8bbfbd6a664e",
+              "parentUUID": "35339315-28a6-439c-9f7c-ff613caad5b2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6a2cb4f6-d4bf-41f7-8544-aafc3bb8112f",
-            "475af9d5-9ab5-48a3-a223-b5e94ac6565d",
-            "4a689a81-f805-4883-b54e-046f0200f844"
+            "3260e7c2-b699-49ab-af50-b7d5f803fdd5",
+            "1c66ee77-21e5-4ffc-9255-6bf4c8d05ac6",
+            "1fc6528e-6865-46cb-b4e5-8bbfbd6a664e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 892,
+          "duration": 628,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -116,7 +116,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

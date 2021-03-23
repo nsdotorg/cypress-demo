@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T07:58:34.343Z",
-    "end": "2021-03-23T07:58:37.436Z",
-    "duration": 3093,
+    "start": "2021-03-23T08:22:58.720Z",
+    "end": "2021-03-23T08:23:01.339Z",
+    "duration": 2619,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9c9e862f-856f-499e-85e3-0e51b34e5445",
+      "uuid": "c02e643b-2e8f-4518-b13b-638c43307ddc",
       "title": "",
       "fullFile": "cypress/integration/tests/pom.spec.js",
       "file": "cypress/integration/tests/pom.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7c5740e1-2504-462d-aa54-786a88e5132c",
+          "uuid": "14d5181b-2b22-4cb4-a1e2-02781c7292cd",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sign in",
               "fullTitle": "Login Sign in",
               "timedOut": null,
-              "duration": 3075,
+              "duration": 2592,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://react-redux.realworld.io/#/login\");\nlogin.email().type(\"cypress.demotests@gmail.com\");\nlogin.password().type(\"admin123\");\nlogin.signInButton().should(\"be.visible\").click();",
               "err": {},
-              "uuid": "919c9564-d06f-48dd-988b-2f0b956a82a4",
-              "parentUUID": "7c5740e1-2504-462d-aa54-786a88e5132c",
+              "uuid": "c9c0e439-33ce-4b1b-acc6-5ad5d09be643",
+              "parentUUID": "14d5181b-2b22-4cb4-a1e2-02781c7292cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "919c9564-d06f-48dd-988b-2f0b956a82a4"
+            "c9c0e439-33ce-4b1b-acc6-5ad5d09be643"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3075,
+          "duration": 2592,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -78,7 +78,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

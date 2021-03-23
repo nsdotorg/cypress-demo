@@ -5,9 +5,9 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T07:55:15.519Z",
-    "end": "2021-03-23T07:55:18.381Z",
-    "duration": 2862,
+    "start": "2021-03-23T08:19:58.968Z",
+    "end": "2021-03-23T08:20:01.917Z",
+    "duration": 2949,
     "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b1676cc1-c0bf-442a-95c3-c51df627ba14",
+      "uuid": "eacb6cf6-504e-4c19-b541-d68f7ecfa9b3",
       "title": "",
       "fullFile": "cypress/integration/examples/querying.spec.js",
       "file": "cypress/integration/examples/querying.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+          "uuid": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
           "title": "Querying",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.get() - query DOM elements",
               "fullTitle": "Querying cy.get() - query DOM elements",
               "timedOut": null,
-              "duration": 535,
+              "duration": 523,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// https://on.cypress.io/get\ncy.get(\"#query-btn\").should(\"contain\", \"Button\");\ncy.get(\".query-btn\").should(\"contain\", \"Button\");\ncy.get(\"#querying .well>button:first\").should(\"contain\", \"Button\"); //              ↲\n// Use CSS selectors just like jQuery\ncy.get('[data-test-id=\"test-example\"]').should(\"have.class\", \"example\"); // 'cy.get()' yields jQuery object, you can get its attribute\n// by invoking `.attr()` method\ncy.get('[data-test-id=\"test-example\"]').invoke(\"attr\", \"data-test-id\").should(\"equal\", \"test-example\"); // or you can get element's CSS property\ncy.get('[data-test-id=\"test-example\"]').invoke(\"css\", \"position\").should(\"equal\", \"static\"); // or use assertions directly during 'cy.get()'\n// https://on.cypress.io/assertions\ncy.get('[data-test-id=\"test-example\"]').should(\"have.attr\", \"data-test-id\", \"test-example\").and(\"have.css\", \"position\", \"static\");",
               "err": {},
-              "uuid": "4589144d-8fda-4aef-8c07-6aa5b8ad8851",
-              "parentUUID": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+              "uuid": "de332201-8a69-43bd-89b9-6cf46f0f4a56",
+              "parentUUID": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "cy.contains() - query DOM elements with matching content",
               "fullTitle": "Querying cy.contains() - query DOM elements with matching content",
               "timedOut": null,
-              "duration": 238,
+              "duration": 228,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "// https://on.cypress.io/contains\ncy.get(\".query-list\").contains(\"bananas\").should(\"have.class\", \"third\"); // we can pass a regexp to `.contains()`\ncy.get(\".query-list\").contains(/^b\\w+/).should(\"have.class\", \"third\");\ncy.get(\".query-list\").contains(\"apples\").should(\"have.class\", \"first\"); // passing a selector to contains will\n// yield the selector containing the text\ncy.get(\"#querying\").contains(\"ul\", \"oranges\").should(\"have.class\", \"query-list\");\ncy.get(\".query-button\").contains(\"Save Form\").should(\"have.class\", \"btn\");",
               "err": {},
-              "uuid": "b20d81ab-424a-40e3-bcb8-510a718849b3",
-              "parentUUID": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+              "uuid": "f44b6510-6ff0-4784-b0c4-c50fd6f8a58a",
+              "parentUUID": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": ".within() - query DOM elements within a specific element",
               "fullTitle": "Querying .within() - query DOM elements within a specific element",
               "timedOut": null,
-              "duration": 213,
+              "duration": 121,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "// https://on.cypress.io/within\ncy.get(\".query-form\").within(function () {\n  cy.get(\"input:first\").should(\"have.attr\", \"placeholder\", \"Email\");\n  cy.get(\"input:last\").should(\"have.attr\", \"placeholder\", \"Password\");\n});",
               "err": {},
-              "uuid": "1d5ca108-279c-418e-8dca-9913164ee2ec",
-              "parentUUID": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+              "uuid": "5c76ca43-e7a5-44f9-9ad5-5c90a8511a96",
+              "parentUUID": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "cy.root() - query the root DOM element",
               "fullTitle": "Querying cy.root() - query the root DOM element",
               "timedOut": null,
-              "duration": 200,
+              "duration": 142,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -101,8 +101,8 @@
               "context": null,
               "code": "// https://on.cypress.io/root\n// By default, root is the document\ncy.root().should(\"match\", \"html\");\ncy.get(\".query-ul\").within(function () {\n  // In this within, the root is now the ul DOM element\n  cy.root().should(\"have.class\", \"query-ul\");\n});",
               "err": {},
-              "uuid": "0912522e-1375-4ada-b396-c4aacd4b73a6",
-              "parentUUID": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+              "uuid": "b619de19-a1f6-4502-a8a0-4d386c39dcbd",
+              "parentUUID": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
               "isHook": false,
               "skipped": false
             },
@@ -110,7 +110,7 @@
               "title": "best practices - selecting elements",
               "fullTitle": "Querying best practices - selecting elements",
               "timedOut": null,
-              "duration": 769,
+              "duration": 778,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -119,24 +119,24 @@
               "context": null,
               "code": "// https://on.cypress.io/best-practices#Selecting-Elements\ncy.get(\"[data-cy=best-practices-selecting-elements]\").within(function () {\n  // Worst - too generic, no context\n  cy.get(\"button\").click(); // Bad. Coupled to styling. Highly subject to change.\n  cy.get(\".btn.btn-large\").click(); // Average. Coupled to the `name` attribute which has HTML semantics.\n  cy.get(\"[name=submission]\").click(); // Better. But still coupled to styling or JS event listeners.\n  cy.get(\"#main\").click(); // Slightly better. Uses an ID but also ensures the element\n  // has an ARIA role attribute\n  cy.get(\"#main[role=button]\").click(); // Much better. But still coupled to text content that may change.\n  cy.contains(\"Submit\").click(); // Best. Insulated from all changes.\n  cy.get(\"[data-cy=submit]\").click();\n});",
               "err": {},
-              "uuid": "8e630b5e-d766-4e2c-9695-d6b0e41873c0",
-              "parentUUID": "a0e8388c-f1f2-4f69-a41c-bc42940c6ca9",
+              "uuid": "ac92c7c6-e2e2-4c2b-86b8-244b8e1c5202",
+              "parentUUID": "7a5690d8-32c7-4ba9-a75a-fb4781cca821",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4589144d-8fda-4aef-8c07-6aa5b8ad8851",
-            "b20d81ab-424a-40e3-bcb8-510a718849b3",
-            "1d5ca108-279c-418e-8dca-9913164ee2ec",
-            "0912522e-1375-4ada-b396-c4aacd4b73a6",
-            "8e630b5e-d766-4e2c-9695-d6b0e41873c0"
+            "de332201-8a69-43bd-89b9-6cf46f0f4a56",
+            "f44b6510-6ff0-4784-b0c4-c50fd6f8a58a",
+            "5c76ca43-e7a5-44f9-9ad5-5c90a8511a96",
+            "b619de19-a1f6-4502-a8a0-4d386c39dcbd",
+            "ac92c7c6-e2e2-4c2b-86b8-244b8e1c5202"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1955,
+          "duration": 1792,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -154,7 +154,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.2.0"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {
