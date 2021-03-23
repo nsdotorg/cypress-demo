@@ -415,10 +415,16 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 npm install --save-dev cypress-cucumber-preprocessor
 ```
 
-2. Bind Preprocess Event to File
+2. Bind Cucumber Preprocessor Event to File
+
+`/cypress/plugins/index.js`
 
 ```
-/cypress/plugins/index.js
+const cucumber = require('cypress-cucumber-preprocessor').default
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}
 ```
 
 3. Add Support for .feature files
@@ -450,7 +456,7 @@ npm install --save-dev cypress-cucumber-preprocessor
   - @smoke
   - @focus
 
-- Example Commands
+Example Commands
 
 ```
 npx cypress-tags run -e TAGS='@smoke'
