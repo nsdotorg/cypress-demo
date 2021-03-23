@@ -310,6 +310,8 @@ npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser 
 
 ## **File Upload Plugin**
 
+[Visit Cypress File Upload Plugin Page](https://github.com/abramenal/cypress-file-upload)
+
 ## **Reporting**
 
 - No fancy reports by Cypress
@@ -349,7 +351,7 @@ npm install mochawesome-merge --save-dev
 npm install mochawesome-report-generator --save-dev
 ```
 
-`Single Command Installation`
+**`Single Command Installation`**
 
 ```
 npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
