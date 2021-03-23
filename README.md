@@ -255,7 +255,7 @@ Example
 
 Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/configuration#Options) for more info
 
-## **then command**
+## **.then() command**
 
 - Debugging
 - Extract Values
