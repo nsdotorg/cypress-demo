@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 3,
-    "start": "2021-03-23T08:24:06.426Z",
-    "end": "2021-03-23T08:24:50.287Z",
-    "duration": 43861,
+    "start": "2021-03-23T08:46:19.076Z",
+    "end": "2021-03-23T08:47:02.465Z",
+    "duration": 43389,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b4ed53f6-5929-4e9d-b38f-8a67efaa2da6",
+      "uuid": "f0b21705-2c0c-4b00-8724-4c0b3dddeb48",
       "title": "",
       "fullFile": "cypress/integration/tests/url.spec.js",
       "file": "cypress/integration/tests/url.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
+          "uuid": "59cd4310-c5fd-4892-bd38-68a1e1cdbb56",
           "title": "Create and mark-unmark as favorite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sign in",
               "fullTitle": "Create and mark-unmark as favorite Sign in",
               "timedOut": null,
-              "duration": 13007,
+              "duration": 12554,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:15:8)",
                 "diff": null
               },
-              "uuid": "6a1a3690-6a64-44d2-8ec9-0e84414e677d",
-              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
+              "uuid": "69a5c5f6-c481-4540-8121-834b5115ded9",
+              "parentUUID": "59cd4310-c5fd-4892-bd38-68a1e1cdbb56",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Create a post",
               "fullTitle": "Create and mark-unmark as favorite Create a post",
               "timedOut": null,
-              "duration": 15331,
+              "duration": 15364,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'New Post' but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:18:8)",
                 "diff": null
               },
-              "uuid": "1701adc3-773c-47d1-841f-cedb59a48308",
-              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
+              "uuid": "461a791c-b01b-4682-ab67-7dea05799f3d",
+              "parentUUID": "59cd4310-c5fd-4892-bd38-68a1e1cdbb56",
               "isHook": false,
               "skipped": false
             },
@@ -82,7 +82,7 @@
               "title": "Mark-unmark as favorite",
               "fullTitle": "Create and mark-unmark as favorite Mark-unmark as favorite",
               "timedOut": null,
-              "duration": 15347,
+              "duration": 15326,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -95,8 +95,8 @@
                 "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
                 "diff": null
               },
-              "uuid": "c451289f-e2b8-42a1-b366-e31573d1ff52",
-              "parentUUID": "4cffadaa-472c-485a-8ab6-8210dd21d2fd",
+              "uuid": "e3556ebb-81c4-4cbd-9d35-d5cfbc1c0f5e",
+              "parentUUID": "59cd4310-c5fd-4892-bd38-68a1e1cdbb56",
               "isHook": false,
               "skipped": false
             }
@@ -104,13 +104,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "6a1a3690-6a64-44d2-8ec9-0e84414e677d",
-            "1701adc3-773c-47d1-841f-cedb59a48308",
-            "c451289f-e2b8-42a1-b366-e31573d1ff52"
+            "69a5c5f6-c481-4540-8121-834b5115ded9",
+            "461a791c-b01b-4682-ab67-7dea05799f3d",
+            "e3556ebb-81c4-4cbd-9d35-d5cfbc1c0f5e"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 43685,
+          "duration": 43244,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

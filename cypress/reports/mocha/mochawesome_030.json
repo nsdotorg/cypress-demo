@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-23T08:23:41.452Z",
-    "end": "2021-03-23T08:24:01.664Z",
-    "duration": 20212,
+    "start": "2021-03-23T08:45:53.976Z",
+    "end": "2021-03-23T08:46:14.251Z",
+    "duration": 20275,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "25d09e26-fd63-4902-87d6-c4cca98d6c11",
+      "uuid": "7a741037-63bc-419c-b619-b459c48c744d",
       "title": "",
       "fullFile": "cypress/integration/tests/uploadFiles.spec.js",
       "file": "cypress/integration/tests/uploadFiles.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e4ddc4db-00d9-4eb9-9e0a-08076d8dc8a5",
+          "uuid": "58913e16-a215-48aa-aec3-3d4abd4bd5f3",
           "title": "Working with plugins",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "File upload",
               "fullTitle": "Working with plugins File upload",
               "timedOut": null,
-              "duration": 17565,
+              "duration": 17557,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'You've uploaded a file.  Your notes on the file were:' but never did.\n    at Context.eval (https://cgi-lib.berkeley.edu/__cypress/tests?p=cypress/integration/tests/uploadFiles.spec.js:18:8)",
                 "diff": null
               },
-              "uuid": "e1620a72-46cf-430f-9793-0e7240360317",
-              "parentUUID": "e4ddc4db-00d9-4eb9-9e0a-08076d8dc8a5",
+              "uuid": "43d7e1e8-e028-4807-91db-b5212290940e",
+              "parentUUID": "58913e16-a215-48aa-aec3-3d4abd4bd5f3",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e1620a72-46cf-430f-9793-0e7240360317"
+            "43d7e1e8-e028-4807-91db-b5212290940e"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 17565,
+          "duration": 17557,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

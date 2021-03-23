@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T08:20:37.896Z",
-    "end": "2021-03-23T08:20:45.480Z",
-    "duration": 7584,
+    "start": "2021-03-23T08:42:52.492Z",
+    "end": "2021-03-23T08:43:00.584Z",
+    "duration": 8092,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9dc81deb-8692-4e67-afb6-c89d01d06be8",
+      "uuid": "413de3f2-96a7-4b66-9b03-75c75891a62e",
       "title": "",
       "fullFile": "cypress/integration/examples/waiting.spec.js",
       "file": "cypress/integration/examples/waiting.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b22946c-d757-461d-97f1-777ad51eb60b",
+          "uuid": "87e84c2f-b610-42f0-b852-5f6e18763848",
           "title": "Waiting",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.wait() - wait for a specific amount of time",
               "fullTitle": "Waiting cy.wait() - wait for a specific amount of time",
               "timedOut": null,
-              "duration": 5540,
+              "duration": 5563,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\".wait-input1\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input2\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input3\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);",
               "err": {},
-              "uuid": "84e128d5-a7de-4eb5-b6da-bc9b5624cbc6",
-              "parentUUID": "8b22946c-d757-461d-97f1-777ad51eb60b",
+              "uuid": "ad7cf073-0c80-48c9-9fc5-d7f47558f38c",
+              "parentUUID": "87e84c2f-b610-42f0-b852-5f6e18763848",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "cy.wait() - wait for a specific route",
               "fullTitle": "Waiting cy.wait() - wait for a specific route",
               "timedOut": null,
-              "duration": 804,
+              "duration": 1229,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "// Listen to GET to comments/1\ncy.intercept(\"GET\", \"**/comments/*\").as(\"getComment\"); // we have code that gets a comment when\n// the button is clicked in scripts.js\ncy.get(\".network-btn\").click(); // wait for GET comments/1\ncy.wait(\"@getComment\").its(\"response.statusCode\").should(\"be.oneOf\", [200, 304]);",
               "err": {},
-              "uuid": "ee3a330f-83fd-4dd4-b0f7-4435706581e9",
-              "parentUUID": "8b22946c-d757-461d-97f1-777ad51eb60b",
+              "uuid": "072fb32e-d0c4-429c-b4b2-33bd2a0dd8f8",
+              "parentUUID": "87e84c2f-b610-42f0-b852-5f6e18763848",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "84e128d5-a7de-4eb5-b6da-bc9b5624cbc6",
-            "ee3a330f-83fd-4dd4-b0f7-4435706581e9"
+            "ad7cf073-0c80-48c9-9fc5-d7f47558f38c",
+            "072fb32e-d0c4-429c-b4b2-33bd2a0dd8f8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6344,
+          "duration": 6792,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

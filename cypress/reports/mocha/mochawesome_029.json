@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-23T08:23:24.575Z",
-    "end": "2021-03-23T08:23:37.222Z",
-    "duration": 12647,
+    "start": "2021-03-23T08:45:37.219Z",
+    "end": "2021-03-23T08:45:49.812Z",
+    "duration": 12593,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aa3de9cc-2a25-425b-939c-68447d726230",
+      "uuid": "8d7ae1c7-ef9e-4166-bd0e-fb5211c5e209",
       "title": "",
       "fullFile": "cypress/integration/tests/thenCommand.spec.js",
       "file": "cypress/integration/tests/thenCommand.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
+          "uuid": "aee7b9a8-65cf-4f1a-b533-47a303d50614",
           "title": "Create and mark-unmark as favorite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Create a post",
               "fullTitle": "Create and mark-unmark as favorite Create a post",
               "timedOut": null,
-              "duration": 12411,
+              "duration": 12365,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Your Feed' but never did.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Create and mark-unmark as f...`\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/support/index.js:18:6)",
                 "diff": null
               },
-              "uuid": "bef57b52-7696-412b-a2d0-907949fc0449",
-              "parentUUID": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
+              "uuid": "faf5c7ef-9b24-4751-af25-e0c872b32fcd",
+              "parentUUID": "aee7b9a8-65cf-4f1a-b533-47a303d50614",
               "isHook": false,
               "skipped": false
             },
@@ -69,8 +69,8 @@
               "context": null,
               "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
-              "uuid": "6e369cb8-24a8-45f0-8b17-e5bec96c88ae",
-              "parentUUID": "508d9b8d-f7bf-4344-9070-3ede88a5ff6c",
+              "uuid": "07d87cc6-5e8f-48cb-8c7d-38a65f31686a",
+              "parentUUID": "aee7b9a8-65cf-4f1a-b533-47a303d50614",
               "isHook": false,
               "skipped": true
             }
@@ -78,13 +78,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "bef57b52-7696-412b-a2d0-907949fc0449"
+            "faf5c7ef-9b24-4751-af25-e0c872b32fcd"
           ],
           "pending": [],
           "skipped": [
-            "6e369cb8-24a8-45f0-8b17-e5bec96c88ae"
+            "07d87cc6-5e8f-48cb-8c7d-38a65f31686a"
           ],
-          "duration": 12411,
+          "duration": 12365,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

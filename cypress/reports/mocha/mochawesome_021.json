@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T08:20:56.963Z",
-    "end": "2021-03-23T08:20:59.849Z",
-    "duration": 2886,
+    "start": "2021-03-23T08:43:12.042Z",
+    "end": "2021-03-23T08:43:14.755Z",
+    "duration": 2713,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aaad21b6-af2c-4e2b-bd59-814163a1ec1a",
+      "uuid": "f1f2f2b3-813f-4bac-aec2-a68b2ad53073",
       "title": "",
       "fullFile": "cypress/integration/tests/abcTest.spec.js",
       "file": "cypress/integration/tests/abcTest.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b34e4b4d-9f45-47fc-85b3-669c5d724636",
+          "uuid": "fa6c704a-4c4c-4b16-94b9-5f2fe6cb1ac3",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Sign in",
               "fullTitle": "Login Sign in",
               "timedOut": null,
-              "duration": 2857,
+              "duration": 2627,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://react-redux.realworld.io/#/login\");\ncy.get('input[type=\"email\"]').type(\"cypress.demotests@gmail.com\");\ncy.get('input[type=\"password\"]').type(\"admin123\");\ncy.get(\".btn\").contains(\"Sign in\").should(\"be.visible\").click();",
               "err": {},
-              "uuid": "f5dc7231-40fb-46e8-bdf3-933fac44960b",
-              "parentUUID": "b34e4b4d-9f45-47fc-85b3-669c5d724636",
+              "uuid": "d7475164-9708-4833-809c-4348b9a0167f",
+              "parentUUID": "fa6c704a-4c4c-4b16-94b9-5f2fe6cb1ac3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f5dc7231-40fb-46e8-bdf3-933fac44960b"
+            "d7475164-9708-4833-809c-4348b9a0167f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2857,
+          "duration": 2627,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

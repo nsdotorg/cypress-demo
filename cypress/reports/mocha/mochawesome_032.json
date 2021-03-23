@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-23T08:24:56.806Z",
-    "end": "2021-03-23T08:24:57.515Z",
-    "duration": 709,
+    "start": "2021-03-23T08:47:08.872Z",
+    "end": "2021-03-23T08:47:09.627Z",
+    "duration": 755,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b98f5421-8d7f-4d3e-9953-3ab5cd4e9059",
+      "uuid": "44880f39-b836-4605-99eb-03027a62c2c5",
       "title": "",
       "fullFile": "cypress/integration/zeroTest/zeroTest.js",
       "file": "cypress/integration/zeroTest/zeroTest.js",
@@ -29,7 +29,7 @@
           "title": "An uncaught error was detected outside of a test",
           "fullTitle": "An uncaught error was detected outside of a test",
           "timedOut": null,
-          "duration": 356,
+          "duration": 382,
           "state": "failed",
           "speed": null,
           "pass": false,
@@ -42,8 +42,8 @@
             "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > Given is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object.1 (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js:4:1)\n    at o (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js:1:265)\n    at r (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js:1:431)\n    at eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js:1:460)\n    at eval (<anonymous>)",
             "diff": null
           },
-          "uuid": "636bd05d-216a-4ab4-ba9f-47d7355f34a9",
-          "parentUUID": "b98f5421-8d7f-4d3e-9953-3ab5cd4e9059",
+          "uuid": "8e0ca633-7733-4e32-96f0-df0d550f2115",
+          "parentUUID": "44880f39-b836-4605-99eb-03027a62c2c5",
           "isHook": false,
           "skipped": false
         }
@@ -51,11 +51,11 @@
       "suites": [],
       "passes": [],
       "failures": [
-        "636bd05d-216a-4ab4-ba9f-47d7355f34a9"
+        "8e0ca633-7733-4e32-96f0-df0d550f2115"
       ],
       "pending": [],
       "skipped": [],
-      "duration": 356,
+      "duration": 382,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

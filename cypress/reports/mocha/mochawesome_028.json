@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2021-03-23T08:23:04.530Z",
-    "end": "2021-03-23T08:23:20.164Z",
-    "duration": 15634,
+    "start": "2021-03-23T08:45:17.221Z",
+    "end": "2021-03-23T08:45:32.858Z",
+    "duration": 15637,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "06a1d4f6-d9b8-475b-b91a-fd57c05b5ca0",
+      "uuid": "9b7681e6-f26c-4c73-a349-41c11298e3b5",
       "title": "",
       "fullFile": "cypress/integration/tests/readWriteFiles.spec.js",
       "file": "cypress/integration/tests/readWriteFiles.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "066e4364-2942-4caf-9c2b-c2a8b0a07aae",
+          "uuid": "a2efb8ac-e8de-45cf-9452-e634d9f506b7",
           "title": "Read-Write files content",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Write to a file",
               "fullTitle": "Read-Write files content Write to a file",
               "timedOut": null,
-              "duration": 74,
+              "duration": 82,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.writeFile(\"dummy.txt\", \"Hello World\\n\");\ncy.writeFile(\"dummy.txt\", \"I am Nishant\", {\n  flag: \"a+\"\n});",
               "err": {},
-              "uuid": "de234231-68c3-4e95-bfb4-36a60b143070",
-              "parentUUID": "066e4364-2942-4caf-9c2b-c2a8b0a07aae",
+              "uuid": "1bcdb6a3-31b0-465d-903a-35530fbee589",
+              "parentUUID": "a2efb8ac-e8de-45cf-9452-e634d9f506b7",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Read from a file",
               "fullTitle": "Read-Write files content Read from a file",
               "timedOut": null,
-              "duration": 15309,
+              "duration": 15328,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "AssertionError: Timed out retrying after 15000ms: `cy.readFile(\"dummy\")` failed because the file does not exist at the following path:\n\n`/Users/macbook/Desktop/Repositories/cypress-demo/dummy`\n\nhttps://on.cypress.io/readfile\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/readWriteFiles.spec.js:13:26)",
                 "diff": null
               },
-              "uuid": "b08fd8bb-af63-44e3-b238-cd572c5e8c58",
-              "parentUUID": "066e4364-2942-4caf-9c2b-c2a8b0a07aae",
+              "uuid": "a0555ee7-cc2a-4bb9-a3d6-a0c35ae72207",
+              "parentUUID": "a2efb8ac-e8de-45cf-9452-e634d9f506b7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "de234231-68c3-4e95-bfb4-36a60b143070"
+            "1bcdb6a3-31b0-465d-903a-35530fbee589"
           ],
           "failures": [
-            "b08fd8bb-af63-44e3-b238-cd572c5e8c58"
+            "a0555ee7-cc2a-4bb9-a3d6-a0c35ae72207"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 15383,
+          "duration": 15410,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

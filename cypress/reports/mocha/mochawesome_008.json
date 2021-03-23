@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T08:19:17.168Z",
-    "end": "2021-03-23T08:19:19.567Z",
-    "duration": 2399,
+    "start": "2021-03-23T08:41:23.358Z",
+    "end": "2021-03-23T08:41:27.803Z",
+    "duration": 4445,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "25d93d50-ad58-4ef8-be61-af86e8369356",
+      "uuid": "9a78b525-764f-4b62-a4cd-bbe46ac498bd",
       "title": "",
       "fullFile": "cypress/integration/examples/local_storage.spec.js",
       "file": "cypress/integration/examples/local_storage.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d225576f-dd90-4604-b15a-ac02517244f0",
+          "uuid": "b98a8f72-9e56-47c8-ad65-99377cdd65d3",
           "title": "Local Storage",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.clearLocalStorage() - clear all data in local storage",
               "fullTitle": "Local Storage cy.clearLocalStorage() - clear all data in local storage",
               "timedOut": null,
-              "duration": 968,
+              "duration": 1474,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// https://on.cypress.io/clearlocalstorage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n}); // clearLocalStorage() yields the localStorage object\ncy.clearLocalStorage().should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop3\")).to.be[\"null\"];\n}); // Clear key matching string in Local Storage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n});\ncy.clearLocalStorage(\"prop1\").should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(ls.getItem(\"prop3\")).to.eq(\"magenta\");\n}); // Clear keys matching regex in Local Storage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n});\ncy.clearLocalStorage(/prop1|2/).should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop3\")).to.eq(\"magenta\");\n});",
               "err": {},
-              "uuid": "7e922ce1-70cc-4fd2-9f26-9e74193157e2",
-              "parentUUID": "d225576f-dd90-4604-b15a-ac02517244f0",
+              "uuid": "2b345e6f-0a08-47db-8350-64edf2d918fc",
+              "parentUUID": "b98a8f72-9e56-47c8-ad65-99377cdd65d3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7e922ce1-70cc-4fd2-9f26-9e74193157e2"
+            "2b345e6f-0a08-47db-8350-64edf2d918fc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 968,
+          "duration": 1474,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
