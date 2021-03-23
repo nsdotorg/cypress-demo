@@ -125,7 +125,7 @@ npx cypress run
 
 ## **Directory Structure**
 
-```shell
+```
 /root/cypress/fixtures
     static files
     external data
@@ -286,7 +286,7 @@ cy.get('@aliasName).first().click()
 
 **`CLI COMMANDS`**
 
-```shell
+```
 // run all spec/test files of the project
 npx cypress run
 
@@ -445,9 +445,9 @@ module.exports = (on, config) => {
 }
 ```
 
-- Feature File [Gherkin Sytax] - /cypress/integration/firstTest.feature
-- Step Definition Directory - /cypress/integration/firstTest
-- Step Definition File - /cypress/integration/firstTest/firstTest.spec.js
+- Feature File [Gherkin Sytax] \- /cypress/integration/firstTest.feature
+- Step Definition Directory \- /cypress/integration/firstTest
+- Step Definition File \- /cypress/integration/firstTest/firstTest.spec.js
 
 - Parameters (Reusable Functions)
 - Data Tables
