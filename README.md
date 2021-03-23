@@ -231,14 +231,14 @@ Add commands in `/support/commands.js`
 
 ## **Hooks**
 
-- Provided by Mocha
+Provided by Mocha
 
-  - before()
-  - beforeEach()
-  - after()
-  - afterEach()
+- before()
+- beforeEach()
+- after()
+- afterEach()
 
-Example:
+Example
 
 - before() - won't run any tests if included in a file when the test it contains fails
 
