@@ -182,10 +182,8 @@ npx cypress run
 
 ## **First Run**
 
-- Default Example Tests
-- Demo Test and Snapshots (Before & After)
-- Default Assertions
-- Default Timeouts (cy.get, cy.contains - 4 seconds)
+- Example Tests
+- Snapshots (Before & After)
 
 ## **Intellisense**
 
