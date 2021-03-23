@@ -406,14 +406,11 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 ```json
 "scripts": {
-    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports
-         && mkdir cypress\\reports\\mochareports",
+    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run",
-    "combine-reports": "mochawesome-merge
-         cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/
-         report.json -f report -o cypress/reports/mochareports",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
     "test" : "npm run scripts || npm run posttest"
 }
@@ -423,17 +420,14 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 ```json
 "scripts": {
-    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports
-         && mkdir cypress\\reports\\mochareports",
+    "clean:reports": "rm -rf cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run",
-    "combine-reports": "mochawesome-merge
-         cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/
-         report.json -f report -o cypress/reports/mochareports",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
-    "test" : "npm run scripts || npm run posttest"
-}
+    "test": "npm run scripts || npm run posttest"
+  },
 ```
 
 ## **Cucumber (Behaviour Driven Approach to Testing)**
