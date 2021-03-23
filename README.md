@@ -479,12 +479,8 @@ npx cypress-tags run -e TAGS='@smoke and not @ui'
 
 ## **API Testing**
 
-- http://dummyapiexample.com
-- Remove (/**/\*.feature, /**/\*.features)
+- http://dummy.restapiexample.com/
 - Expected vs Yielded Values
-
-Files
-`/cypress/integration/mytests/api.spec.ts`
 
 ## **Page Object Model**
 
@@ -492,7 +488,7 @@ Files
 - Elements Aggregated on a Per Page Basis
 - Creating Page Objects
 
-Files
+**Files**
 
 `/cypress/integration/pageObjects/login.js`
 
