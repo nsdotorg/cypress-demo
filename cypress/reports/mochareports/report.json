@@ -59,9 +59,7 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "0b106e4e-5c50-438a-a721-eff9a1fbbb0c"
-          ],
+          "failures": ["0b106e4e-5c50-438a-a721-eff9a1fbbb0c"],
           "pending": [],
           "skipped": [],
           "duration": 14398,
@@ -1093,9 +1091,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "1deac507-29f9-4852-bd3c-c88800fcb57a"
-          ],
+          "passes": ["1deac507-29f9-4852-bd3c-c88800fcb57a"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1209,9 +1205,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "ec2bcecc-5bcd-4474-868b-cff48676b497"
-          ],
+          "passes": ["ec2bcecc-5bcd-4474-868b-cff48676b497"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1253,9 +1247,7 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "1c4d1765-da03-4f15-8730-9284222e8b61"
-          ],
+          "failures": ["1c4d1765-da03-4f15-8730-9284222e8b61"],
           "pending": [],
           "skipped": [],
           "duration": 1132,
@@ -1291,9 +1283,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "ba21d2e6-29a3-48d9-90c1-2138903a9d82"
-          ],
+          "passes": ["ba21d2e6-29a3-48d9-90c1-2138903a9d82"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1330,9 +1320,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "6d8ec2fd-5262-4475-9711-b7e0f120f676"
-          ],
+          "passes": ["6d8ec2fd-5262-4475-9711-b7e0f120f676"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1369,9 +1357,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "9bd9ad90-c81a-4a61-8d85-740810e3de96"
-          ],
+          "passes": ["9bd9ad90-c81a-4a61-8d85-740810e3de96"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1408,9 +1394,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "d24b608a-b0d2-4b1f-9629-72aa397e7300"
-          ],
+          "passes": ["d24b608a-b0d2-4b1f-9629-72aa397e7300"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1447,9 +1431,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "4926af60-412b-4800-a4f5-a8d72f49cae9"
-          ],
+          "passes": ["4926af60-412b-4800-a4f5-a8d72f49cae9"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1486,9 +1468,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "42d9768c-6a97-48af-a5eb-5c1caf3d0ef7"
-          ],
+          "passes": ["42d9768c-6a97-48af-a5eb-5c1caf3d0ef7"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -1659,9 +1639,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "2b345e6f-0a08-47db-8350-64edf2d918fc"
-          ],
+          "passes": ["2b345e6f-0a08-47db-8350-64edf2d918fc"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -3057,9 +3035,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "ce549a5b-45bc-44ae-84b1-79011eae92ea"
-          ],
+          "passes": ["ce549a5b-45bc-44ae-84b1-79011eae92ea"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -3288,9 +3264,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "d7475164-9708-4833-809c-4348b9a0167f"
-          ],
+          "passes": ["d7475164-9708-4833-809c-4348b9a0167f"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -3359,7 +3333,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\"); // use of alias\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  return $fav.text();\n}).as(\"favCount\");\ncy.get(\"@favCount\").then(function ($cnt) {\n  expect(parseInt($cnt)).to.eq(1);\n});\ncy.get(\".btn-primary\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\"); // use of alias\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  return $fav.text();\n}).as(\"favCount\");\ncy.get(\"@favCount\").then(function ($cnt) {\n  expect(parseInt($cnt)).to.eq(1);\n});\ncy.get(\".btn-primary\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "04e1d2d9-885e-46a7-a7b6-f9235aaa037f",
               "parentUUID": "9c06e14e-ee34-4314-9b64-993fe94c0a36",
@@ -3369,13 +3343,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "039141f3-9e25-45f7-877f-7215bd9a3603"
-          ],
+          "failures": ["039141f3-9e25-45f7-877f-7215bd9a3603"],
           "pending": [],
-          "skipped": [
-            "04e1d2d9-885e-46a7-a7b6-f9235aaa037f"
-          ],
+          "skipped": ["04e1d2d9-885e-46a7-a7b6-f9235aaa037f"],
           "duration": 12544,
           "root": false,
           "rootEmpty": false,
@@ -3472,9 +3442,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "48642597-82fb-4924-bfb0-ac5ce69bccf3"
-          ],
+          "passes": ["48642597-82fb-4924-bfb0-ac5ce69bccf3"],
           "failures": [
             "08b3baf3-541e-4311-84b5-e4d0bd09049f",
             "9566f3a6-c9fd-412b-8373-4a2045cc555f"
@@ -3546,7 +3514,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "fcf7cc18-e644-4996-a3b2-6d10deaf9ad8",
               "parentUUID": "e19ce294-6f91-4cee-99b1-8bd728455706",
@@ -3556,13 +3524,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "42f3277d-acd6-43a6-aebc-f8563be8be4a"
-          ],
+          "failures": ["42f3277d-acd6-43a6-aebc-f8563be8be4a"],
           "pending": [],
-          "skipped": [
-            "fcf7cc18-e644-4996-a3b2-6d10deaf9ad8"
-          ],
+          "skipped": ["fcf7cc18-e644-4996-a3b2-6d10deaf9ad8"],
           "duration": 12388,
           "root": false,
           "rootEmpty": false,
@@ -3615,9 +3579,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "50c555b9-ec4b-432a-896c-02605fa664dc"
-          ],
+          "passes": ["50c555b9-ec4b-432a-896c-02605fa664dc"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -3708,10 +3670,10 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <li.nav-item>, 2 more... ] but never did.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <li.nav-item>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/identifyElements.spec.js:32:40)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <li.nav-item>, 2 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <li.nav-item>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/identifyElements.spec.js:32:40)",
                 "diff": null
               },
               "uuid": "a3ed6aec-5386-46e5-b1a4-7f8bb8ff17e6",
@@ -3781,9 +3743,7 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "3fe7179b-8282-49a3-aa73-494d2f36c66b"
-          ],
+          "passes": ["3fe7179b-8282-49a3-aa73-494d2f36c66b"],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -3861,12 +3821,8 @@
             }
           ],
           "suites": [],
-          "passes": [
-            "1bcdb6a3-31b0-465d-903a-35530fbee589"
-          ],
-          "failures": [
-            "a0555ee7-cc2a-4bb9-a3d6-a0c35ae72207"
-          ],
+          "passes": ["1bcdb6a3-31b0-465d-903a-35530fbee589"],
+          "failures": ["a0555ee7-cc2a-4bb9-a3d6-a0c35ae72207"],
           "pending": [],
           "skipped": [],
           "duration": 15410,
@@ -3934,7 +3890,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "07d87cc6-5e8f-48cb-8c7d-38a65f31686a",
               "parentUUID": "aee7b9a8-65cf-4f1a-b533-47a303d50614",
@@ -3944,13 +3900,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "faf5c7ef-9b24-4751-af25-e0c872b32fcd"
-          ],
+          "failures": ["faf5c7ef-9b24-4751-af25-e0c872b32fcd"],
           "pending": [],
-          "skipped": [
-            "07d87cc6-5e8f-48cb-8c7d-38a65f31686a"
-          ],
+          "skipped": ["07d87cc6-5e8f-48cb-8c7d-38a65f31686a"],
           "duration": 12365,
           "root": false,
           "rootEmpty": false,
@@ -4008,9 +3960,7 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "43d7e1e8-e028-4807-91db-b5212290940e"
-          ],
+          "failures": ["43d7e1e8-e028-4807-91db-b5212290940e"],
           "pending": [],
           "skipped": [],
           "duration": 17557,
@@ -4100,10 +4050,10 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.get(\".nav-link\").contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\"); //cy.go(-1)\n//cy.go('forward')\n//cy.go(1)",
+              "code": "cy.get(\".nav-link\").contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\"); //cy.go(-1)\n//cy.go('forward')\n//cy.go(1)",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <a.nav-link>, 2 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
                 "diff": null
               },
               "uuid": "e3556ebb-81c4-4cbd-9d35-d5cfbc1c0f5e",
@@ -4169,9 +4119,7 @@
       ],
       "suites": [],
       "passes": [],
-      "failures": [
-        "8e0ca633-7733-4e32-96f0-df0d550f2115"
-      ],
+      "failures": ["8e0ca633-7733-4e32-96f0-df0d550f2115"],
       "pending": [],
       "skipped": [],
       "duration": 382,

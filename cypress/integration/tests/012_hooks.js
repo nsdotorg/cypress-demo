@@ -1,21 +1,18 @@
 /// <reference types="Cypress" />
 
 describe("Create and mark-unmark as favorite", function () {
-  it("Sign in", function () {
-    cy.visit("https://react-redux.realworld.io/#/login");
-    cy.title().should("eq", "Conduit");
-    cy.location("protocol").should("eq", "https:");
-    cy.get("form").within(($form) => {
-      // cy.get() will only search for elements within form, not within the entire document
-      cy.get('input[type = "email"]').type("cypress.demotests@gmail.com");
-      cy.get('input[type = "password"]').type("admin123");
-      cy.root().submit(); // submits the form yielded from 'within'
-    });
-    cy.contains("Your Feed", { timeout: 10000 }).should("be.visible");
+  Cypress.config("pageLoadTimeout", 100000);
+
+  // hooks example
+  before(function () {
+    cy.SignIn();
   });
 
   it("Create a post", function () {
-    cy.get("ul.navbar-nav").children().contains("New Post").click();
+    // alias example
+    cy.get("ul.navbar-nav").children().as("menu");
+    cy.get("@menu").contains("New Post").click();
+
     cy.hash().should("include", "#/editor");
     cy.get("form").within(($form) => {
       cy.get("input").first().type("Test");
@@ -27,12 +24,24 @@ describe("Create and mark-unmark as favorite", function () {
   });
 
   it("Mark-unmark as favorite", function () {
-    cy.get("ul.navbar-nav").children().contains("QAMs").click();
+    cy.get("ul.navbar-nav").children().contains("Demo").click();
     cy.contains("My Articles").should("be.visible");
     cy.get(".ion-heart").first().click();
     cy.contains("Favorited Articles").click();
     cy.url().should("include", "favorites");
-    cy.get(".ion-heart").first().click();
+
+    // alias example
+    cy.get(".btn-primary")
+      .first()
+      .then(($fav) => {
+        return $fav.text();
+      })
+      .as("favCount");
+    cy.get("@favCount").then(($cnt) => {
+      expect(parseInt($cnt)).to.eq(1);
+    });
+
+    cy.get(".btn-primary").first().click();
     cy.reload();
     cy.contains("No articles are here... yet.").should("be.visible");
     cy.go("back");

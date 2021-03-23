@@ -67,7 +67,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  var favCount = $fav.text();\n  expect(parseInt(favCount)).to.eq(1);\n}).click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "07d87cc6-5e8f-48cb-8c7d-38a65f31686a",
               "parentUUID": "aee7b9a8-65cf-4f1a-b533-47a303d50614",
@@ -77,13 +77,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "faf5c7ef-9b24-4751-af25-e0c872b32fcd"
-          ],
+          "failures": ["faf5c7ef-9b24-4751-af25-e0c872b32fcd"],
           "pending": [],
-          "skipped": [
-            "07d87cc6-5e8f-48cb-8c7d-38a65f31686a"
-          ],
+          "skipped": ["07d87cc6-5e8f-48cb-8c7d-38a65f31686a"],
           "duration": 12365,
           "root": false,
           "rootEmpty": false,

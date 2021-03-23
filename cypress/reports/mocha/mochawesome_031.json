@@ -89,10 +89,10 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.get(\".nav-link\").contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\"); //cy.go(-1)\n//cy.go('forward')\n//cy.go(1)",
+              "code": "cy.get(\".nav-link\").contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\"); //cy.go(-1)\n//cy.go('forward')\n//cy.go(1)",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <a.nav-link>, 2 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <a.nav-link>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/url.spec.js:28:25)",
                 "diff": null
               },
               "uuid": "e3556ebb-81c4-4cbd-9d35-d5cfbc1c0f5e",

@@ -20,12 +20,20 @@ describe("Create and mark-unmark as favorite", function () {
   });
 
   it("Mark-unmark as favorite", function () {
-    cy.get("ul.navbar-nav").children().contains("QAMs").click();
+    cy.get("ul.navbar-nav").children().contains("Demo").click();
     cy.contains("My Articles").should("be.visible");
     cy.get(".ion-heart").first().click();
     cy.contains("Favorited Articles").click();
     cy.url().should("include", "favorites");
-    cy.get(".ion-heart").first().click();
+
+    // then() example
+    cy.get(".btn-primary")
+      .first()
+      .then(($fav) => {
+        const favCount = $fav.text();
+        expect(parseInt(favCount)).to.eq(1);
+      })
+      .click();
     cy.reload();
     cy.contains("No articles are here... yet.").should("be.visible");
     cy.go("back");

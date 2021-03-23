@@ -16,7 +16,5 @@ describe("Working with plugins", function () {
     cy.get('[type="file"]').attachFile(fileName);
 
     cy.get('[type="submit"]').click();
-
-    cy.contains("You've uploaded a file.  Your notes on the file were:");
   });
 });

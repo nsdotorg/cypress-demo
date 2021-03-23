@@ -1,17 +1,16 @@
 /// <reference types="Cypress" />
 
 describe("Create and mark-unmark as favorite", function () {
+  // overwriting configuration in cypress.json for this test file
   Cypress.config("pageLoadTimeout", 100000);
 
+  // custom command example - custom command SignIn() is defined in support/commands.js
   before(function () {
     cy.SignIn();
   });
 
   it("Create a post", function () {
-    // use of alias
-    cy.get("ul.navbar-nav").children().as("menu");
-    cy.get("@menu").contains("New Post").click();
-
+    cy.get("ul.navbar-nav").children().contains("New Post").click();
     cy.hash().should("include", "#/editor");
     cy.get("form").within(($form) => {
       cy.get("input").first().type("Test");
@@ -23,24 +22,12 @@ describe("Create and mark-unmark as favorite", function () {
   });
 
   it("Mark-unmark as favorite", function () {
-    cy.get("ul.navbar-nav").children().contains("QAMs").click();
+    cy.get("ul.navbar-nav").children().contains("Demo").click();
     cy.contains("My Articles").should("be.visible");
     cy.get(".ion-heart").first().click();
     cy.contains("Favorited Articles").click();
     cy.url().should("include", "favorites");
-
-    // use of alias
-    cy.get(".btn-primary")
-      .first()
-      .then(($fav) => {
-        return $fav.text();
-      })
-      .as("favCount");
-    cy.get("@favCount").then(($cnt) => {
-      expect(parseInt($cnt)).to.eq(1);
-    });
-
-    cy.get(".btn-primary").first().click();
+    cy.get(".ion-heart").first().click();
     cy.reload();
     cy.contains("No articles are here... yet.").should("be.visible");
     cy.go("back");

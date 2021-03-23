@@ -67,7 +67,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "fcf7cc18-e644-4996-a3b2-6d10deaf9ad8",
               "parentUUID": "e19ce294-6f91-4cee-99b1-8bd728455706",
@@ -77,13 +77,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "42f3277d-acd6-43a6-aebc-f8563be8be4a"
-          ],
+          "failures": ["42f3277d-acd6-43a6-aebc-f8563be8be4a"],
           "pending": [],
-          "skipped": [
-            "fcf7cc18-e644-4996-a3b2-6d10deaf9ad8"
-          ],
+          "skipped": ["fcf7cc18-e644-4996-a3b2-6d10deaf9ad8"],
           "duration": 12388,
           "root": false,
           "rootEmpty": false,

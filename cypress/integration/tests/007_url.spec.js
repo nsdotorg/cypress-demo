@@ -25,7 +25,7 @@ describe("Create and mark-unmark as favorite", function () {
   });
 
   it("Mark-unmark as favorite", function () {
-    cy.get(".nav-link").contains("QAMs").click();
+    cy.get(".nav-link").contains("Demo").click();
     cy.contains("My Articles").should("be.visible");
     cy.get(".ion-heart").click();
     cy.contains("Favorited Articles").click();

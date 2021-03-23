@@ -10,3 +10,5 @@ describe("Read-Write files content", function () {
     cy.readFile("dummy").should("contains", "Hello World");
   });
 });
+
+// 2 major difference between cy.readFile and cy.fixture command - check the repository readme file

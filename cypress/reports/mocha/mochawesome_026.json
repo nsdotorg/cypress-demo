@@ -89,10 +89,10 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\");\ncy.get(\".ion-heart\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {
-                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <li.nav-item>, 2 more... ] but never did.",
-                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'QAMs' within the element: [ <li.nav-item>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/identifyElements.spec.js:32:40)",
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <li.nav-item>, 2 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find content: 'Demo' within the element: [ <li.nav-item>, 2 more... ] but never did.\n    at Context.eval (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/tests/identifyElements.spec.js:32:40)",
                 "diff": null
               },
               "uuid": "a3ed6aec-5386-46e5-b1a4-7f8bb8ff17e6",

@@ -67,7 +67,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"QAMs\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\"); // use of alias\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  return $fav.text();\n}).as(\"favCount\");\ncy.get(\"@favCount\").then(function ($cnt) {\n  expect(parseInt($cnt)).to.eq(1);\n});\ncy.get(\".btn-primary\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
+              "code": "cy.get(\"ul.navbar-nav\").children().contains(\"Demo\").click();\ncy.contains(\"My Articles\").should(\"be.visible\");\ncy.get(\".ion-heart\").first().click();\ncy.contains(\"Favorited Articles\").click();\ncy.url().should(\"include\", \"favorites\"); // use of alias\ncy.get(\".btn-primary\").first().then(function ($fav) {\n  return $fav.text();\n}).as(\"favCount\");\ncy.get(\"@favCount\").then(function ($cnt) {\n  expect(parseInt($cnt)).to.eq(1);\n});\ncy.get(\".btn-primary\").first().click();\ncy.reload();\ncy.contains(\"No articles are here... yet.\").should(\"be.visible\");\ncy.go(\"back\");",
               "err": {},
               "uuid": "04e1d2d9-885e-46a7-a7b6-f9235aaa037f",
               "parentUUID": "9c06e14e-ee34-4314-9b64-993fe94c0a36",
@@ -77,13 +77,9 @@
           ],
           "suites": [],
           "passes": [],
-          "failures": [
-            "039141f3-9e25-45f7-877f-7215bd9a3603"
-          ],
+          "failures": ["039141f3-9e25-45f7-877f-7215bd9a3603"],
           "pending": [],
-          "skipped": [
-            "04e1d2d9-885e-46a7-a7b6-f9235aaa037f"
-          ],
+          "skipped": ["04e1d2d9-885e-46a7-a7b6-f9235aaa037f"],
           "duration": 12544,
           "root": false,
           "rootEmpty": false,
