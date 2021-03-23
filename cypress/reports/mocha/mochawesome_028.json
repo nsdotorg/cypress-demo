@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-23T07:58:39.286Z",
+    "end": "2021-03-23T07:58:54.664Z",
+    "duration": 15378,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c7c66640-983e-4733-86dc-eded8fb7e390",
+      "title": "",
+      "fullFile": "cypress/integration/tests/readWriteFiles.spec.js",
+      "file": "cypress/integration/tests/readWriteFiles.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4d260b2-3f01-465f-acf3-56423d619c14",
+          "title": "Read-Write files content",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Write to a file",
+              "fullTitle": "Read-Write files content Write to a file",
+              "timedOut": null,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.writeFile(\"dummy.txt\", \"Hello World\\n\");\ncy.writeFile(\"dummy.txt\", \"I am Nishant\", {\n  flag: \"a+\"\n});",
+              "err": {},
+              "uuid": "6022d624-0f2c-4447-a9c4-f99c1dce5cdc",
+              "parentUUID": "f4d260b2-3f01-465f-acf3-56423d619c14",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Read from a file",
+              "fullTitle": "Read-Write files content Read from a file",
+              "timedOut": null,
+              "duration": 15321,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(\"dummy\").should(\"contains\", \"Hello World\");",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.readFile(\"dummy\") failed because the file does not exist at the following path:\n\n/Users/macbook/Desktop/Repositories/cypress-demo/dummy",
+                "estack": "CypressError: Timed out retrying: cy.readFile(\"dummy\") failed because the file does not exist at the following path:\n\n/Users/macbook/Desktop/Repositories/cypress-demo/dummy\n    at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "21c26355-3ff8-4ecf-b860-ea457a012f3d",
+              "parentUUID": "f4d260b2-3f01-465f-acf3-56423d619c14",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6022d624-0f2c-4447-a9c4-f99c1dce5cdc"
+          ],
+          "failures": [
+            "21c26355-3ff8-4ecf-b860-ea457a012f3d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

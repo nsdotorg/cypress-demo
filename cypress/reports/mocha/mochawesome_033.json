@@ -1,0 +1,92 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-23T08:00:28.274Z",
+    "end": "2021-03-23T08:00:28.671Z",
+    "duration": 397,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e694a99f-70b2-4d5d-9d3b-24533189e320",
+      "title": "",
+      "fullFile": "cypress/integration/zeroTest/zeroTest.js",
+      "file": "cypress/integration/zeroTest/zeroTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": " An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 379,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "Uncaught ReferenceError: Given is not defined\n\nThis error originated from your test code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "Uncaught ReferenceError: Given is not defined\n\nThis error originated from your test code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object.1 (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js-820:4:1)\n    at o (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js-820:1:265)\n    at r (https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js-820:1:431)\n    at https://react-redux.realworld.io/__cypress/tests?p=cypress/integration/zeroTest/zeroTest.js-820:1:460",
+            "diff": null
+          },
+          "uuid": "bc8b33c2-fcb6-4199-8993-b48c6ef69b2e",
+          "parentUUID": "e694a99f-70b2-4d5d-9d3b-24533189e320",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "bc8b33c2-fcb6-4199-8993-b48c6ef69b2e"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 379,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

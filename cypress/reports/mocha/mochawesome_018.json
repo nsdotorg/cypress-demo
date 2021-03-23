@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-23T07:55:48.612Z",
+    "end": "2021-03-23T07:55:55.274Z",
+    "duration": 6662,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ba604679-0f93-41f4-b431-94e2985956c8",
+      "title": "",
+      "fullFile": "cypress/integration/examples/waiting.spec.js",
+      "file": "cypress/integration/examples/waiting.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+          "title": "Waiting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "cy.wait() - wait for a specific amount of time",
+              "fullTitle": "Waiting cy.wait() - wait for a specific amount of time",
+              "timedOut": null,
+              "duration": 4930,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".wait-input1\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input2\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);\ncy.get(\".wait-input3\").type(\"Wait 1000ms after typing\");\ncy.wait(1000);",
+              "err": {},
+              "uuid": "58d50735-c003-487c-bb12-1894ab4dc86a",
+              "parentUUID": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cy.wait() - wait for a specific route",
+              "fullTitle": "Waiting cy.wait() - wait for a specific route",
+              "timedOut": null,
+              "duration": 581,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Listen to GET to comments/1\ncy.intercept(\"GET\", \"**/comments/*\").as(\"getComment\"); // we have code that gets a comment when\n// the button is clicked in scripts.js\ncy.get(\".network-btn\").click(); // wait for GET comments/1\ncy.wait(\"@getComment\").its(\"response.statusCode\").should(\"be.oneOf\", [200, 304]);",
+              "err": {
+                "message": "TypeError: cy.intercept is not a function",
+                "estack": "TypeError: cy.intercept is not a function\n    at Context.<anonymous> (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/waiting.spec.js-599:22:8)",
+                "diff": null
+              },
+              "uuid": "f0811fab-1f53-4366-b6a1-6c2cd59b0e59",
+              "parentUUID": "dfbd41fe-f0c2-400f-a6d3-62d0d7ffd96c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58d50735-c003-487c-bb12-1894ab4dc86a"
+          ],
+          "failures": [
+            "f0811fab-1f53-4366-b6a1-6c2cd59b0e59"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5511,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

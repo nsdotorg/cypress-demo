@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-23T07:54:43.359Z",
+    "end": "2021-03-23T07:54:45.240Z",
+    "duration": 1881,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "116ec467-66af-4874-b208-b678c55d8395",
+      "title": "",
+      "fullFile": "cypress/integration/examples/local_storage.spec.js",
+      "file": "cypress/integration/examples/local_storage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b9285b0-ef9c-4310-b3c1-8ab4b0bd05e5",
+          "title": "Local Storage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "cy.clearLocalStorage() - clear all data in local storage",
+              "fullTitle": "Local Storage cy.clearLocalStorage() - clear all data in local storage",
+              "timedOut": null,
+              "duration": 765,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// https://on.cypress.io/clearlocalstorage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n}); // clearLocalStorage() yields the localStorage object\ncy.clearLocalStorage().should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop3\")).to.be[\"null\"];\n}); // Clear key matching string in Local Storage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n});\ncy.clearLocalStorage(\"prop1\").should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(ls.getItem(\"prop3\")).to.eq(\"magenta\");\n}); // Clear keys matching regex in Local Storage\ncy.get(\".ls-btn\").click().should(function () {\n  expect(localStorage.getItem(\"prop1\")).to.eq(\"red\");\n  expect(localStorage.getItem(\"prop2\")).to.eq(\"blue\");\n  expect(localStorage.getItem(\"prop3\")).to.eq(\"magenta\");\n});\ncy.clearLocalStorage(/prop1|2/).should(function (ls) {\n  expect(ls.getItem(\"prop1\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop2\")).to.be[\"null\"];\n  expect(ls.getItem(\"prop3\")).to.eq(\"magenta\");\n});",
+              "err": {},
+              "uuid": "f9c719ce-807d-490a-b888-0440e518b529",
+              "parentUUID": "1b9285b0-ef9c-4310-b3c1-8ab4b0bd05e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9c719ce-807d-490a-b888-0440e518b529"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 765,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
