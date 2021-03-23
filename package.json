@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+    "clean:reports": "rm -rf cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run",
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
@@ -20,19 +20,27 @@
   ],
   "author": "Nishant Singh",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^3.4.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsdotorg/cypress-demo.git"
   },
-  "devDependencies": {
-    "cypress-cucumber-preprocessor": "^2.0.1",
-    "cypress-file-upload": "^4.0.4",
-    "cypress-multi-reporters": "^1.2.4",
-    "mocha": "^7.1.2",
-    "mochawesome": "^6.1.1",
-    "mochawesome-merge": "^4.0.3",
-    "mochawesome-report-generator": "^5.1.0"
+  "bugs": {
+    "url": "https://github.com/nsdotorg/cypress-demo/issues"
+  },
+  "homepage": "https://github.com/nsdotorg/cypress-demo#readme",
+  "dependencies": {
+    "cypress": "^6.8.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-file-upload": "^5.0.3",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
