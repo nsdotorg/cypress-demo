@@ -286,22 +286,33 @@ cy.get('@aliasName).first().click()
 
 **`CLI COMMANDS`**
 
-```
-// run all spec/test files of the project
+`run all spec/test files of the project`
+
+```shell
 npx cypress run
+```
 
-// run all spec/test files of a particular directory
+`run all spec/test files of a particular directory`
+
+```shell
 npx cypress run --spec "cypress/integration/examples/*.js"
+```
 
-// run single test file
+`run single test file`
+
+```
 npx cypress run --spec "cypress/integration/examples/actions.spec.js"
+```
 
-// run or skip a particular test of a spec/test file
-    * use only or skip with decribe/it
+`run or skip a particular test of a spec/test file \* use only or skip with decribe/it`
 
-// run test in a specific browser
+`run test in a specific browser`
+
+```
 npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
 ```
+
+````
 
 ## **Screenshots and Videos**
 
@@ -325,7 +336,7 @@ Visit [Cypress File Upload Plugin Page](https://github.com/abramenal/cypress-fil
 
 ```shell
 npm install mocha --save-dev
-```
+````
 
 2. [Install cypress-multi-reporters](https://www.npmjs.com/package/cypress-multi-reporters)
 
