@@ -449,16 +449,15 @@ module.exports = (on, config) => {
 - Step Definition Directory `/cypress/integration/firstTest`
 - Step Definition File `/cypress/integration/firstTest/firstTest.spec.js`
 
-Features
+**Features**
 
 - Parameters (Reusable Functions)
 - Data Tables
 - Tags
-
   - @smoke
   - @focus
 
-Example Commands
+**Example Commands**
 
 ```shell
 npx cypress-tags run -e TAGS='@smoke'
