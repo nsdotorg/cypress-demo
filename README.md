@@ -310,7 +310,7 @@ npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser 
 
 ## **File Upload Plugin**
 
-[Visit Cypress File Upload Plugin Page](https://github.com/abramenal/cypress-file-upload)
+Visit [Cypress File Upload Plugin Page](https://github.com/abramenal/cypress-file-upload)
 
 ## **Reporting**
 
