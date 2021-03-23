@@ -286,23 +286,21 @@ cy.get('@aliasName).first().click()
 
 **`CLI COMMANDS`**
 
-<hr/>
-
 ```
 // run all spec/test files of the project
-~ npx cypress run
+npx cypress run
 
 // run all spec/test files of a particular directory
-~ npx cypress run --spec "cypress/integration/examples/*.js"
+npx cypress run --spec "cypress/integration/examples/*.js"
 
 // run single test file
-~ npx cypress run --spec "cypress/integration/examples/actions.spec.js"
+npx cypress run --spec "cypress/integration/examples/actions.spec.js"
 
 // run or skip a particular test of a spec/test file
     * use only or skip with decribe/it
 
 // run test in a specific browser
-~ npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
+npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
 ```
 
 ## **Screenshots and Videos**
