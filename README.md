@@ -497,8 +497,7 @@ npx cypress-tags run -e TAGS='@smoke and not @ui'
 ## **Working with Files (Fixtures)**
 
 - Static Data (files, images, read/write operations)
-- /fixtures/userLoginDetails.json
-- 2 test files
+- `/fixtures/userLoginDetails.json`
 - readFile vs fixture (2 key differences)
   - root directory
   - file priority order
@@ -507,13 +506,13 @@ npx cypress-tags run -e TAGS='@smoke and not @ui'
 
 #### Steps to resolve Cypress related timeout/proxy errors in Windows VDI
 
-`1. Run the following command in terminal. It should open your .npmrc file in notepad`
+**`1. Run the following command in terminal. It should open your .npmrc file in notepad`**
 
 ```shell
 npm config edit
 ```
 
-`2. Add the following to your .npmrc file opened in the previous step or replace any existing proxy variables with the following 3 lines`
+**`2. Add the following to your .npmrc file opened in the previous step or replace any existing proxy variables with the following 3 lines`**
 
 Note: Replace <VDI-ID> with your VDI ID/Network ID and <VDI-PASSWORD> with your VDI password`
 
@@ -525,16 +524,16 @@ set HTTP_PROXY=http://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
 set HTTPS_PROXY=https://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
 ```
 
-`3. Remove /node_modules from the directory where cypress is installed. For content-pages repo, this is /content-pages/e2e/node_modules directory`
+**`3. Remove /node_modules from the directory where cypress is installed. For content-pages repo, this is /content-pages/e2e/node_modules directory`**
 
-`4. Run the following commands in your terminal`
+**`4. Run the following commands in your terminal`**
 
 ```shell
 npm cache clean --force
 cypress cache clear
 ```
 
-`5. Do a fresh npm install in the directory where cypress is installed`
+**`5. Do a fresh npm install in the directory where cypress is installed`**
 
 `/content-pages/e2e/`
 
@@ -542,7 +541,7 @@ cypress cache clear
 npm install
 ```
 
-`6. Open the following file in your node_modules where cypress is installed`
+**`6. Open the following file in your node_modules where cypress is installed`**
 
 `/content-pages/e2e/node_modules/cypress/lib/tasks/verify.js`
 
@@ -550,13 +549,13 @@ Search for VERIFY_TEST_RUNNER_TIMEOUT variable which is set to 30000 (default va
 Change it to 100000 (increase this value if you still get timeout errors after all the steps)
 Save the file
 
-`7. Make sure your application is running before running Cypress. Usually it's`
+**`7. Make sure your application is running before running Cypress. Usually it's`**
 
 ```shell
 npm run start
 ```
 
-`8. Open a new terminal tab and verify your cypress installation with the following command`
+**`8. Open a new terminal tab and verify your cypress installation with the following command`**
 
 ```shell
 cypress verify
@@ -566,7 +565,7 @@ It should show something like this depending on your version
 
 :heavy_check_mark: Verified Cypress! /Users/<user>/Library/Caches/Cypress/<your-cypress-version>/Cypress.app
 
-`9. Open Cypress (depending on the script name in package.json). In this case it's cy:open in package.json. So, run`
+**`9. Open Cypress (depending on the script name in package.json). In this case it's cy:open in package.json. So, run`**
 
 ```shell
 npm run cy:open
