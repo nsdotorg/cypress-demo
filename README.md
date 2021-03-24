@@ -336,13 +336,13 @@ it.skip("GET - read", () => {
 npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
 ```
 
-**Headless Run (single test)**
+**Headless Run Result (single test)**
 
 <p align="center">
   <img alt="Headless Run Summary - Single Test" src="assets/individual-test-summary.png" width="75%" height="75%" />
 </p>
 
-**Headless Run Results (all tests)**
+**Headless Run Result (all tests)**
 
 <p align="center">
   <img alt="Headless Run Summary - All Tests" src="assets/headless-run-summary2.png" width="75%" height="75%" />
