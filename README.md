@@ -233,12 +233,16 @@ Add commands in `/support/commands.js`
 
 Provided by Mocha
 
-- before()
-- beforeEach()
-- after()
-- afterEach()
+```js
+before(); // run once before all the tests in a describe
+beforeEach(); // run before each test in a describe - can be used to prevent domino effect
+after(); // run once after all the tests in a describe
+afterEach(); // run after each test in a describe
+```
 
-Example
+Note: Cypress clears out the state of browser in between tests
+
+Example Scenario
 
 - before() - won't run any tests if included in a file when the test it contains fails
 
