@@ -268,8 +268,8 @@ Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/con
 
 ## **Aliases**
 
-- Reuse DOM Elements
-- Limitation of .then() command
+- Reuse DOM elements
+- Overcomes limitation of .then() command
 - .then() expects input then and there (works with objects)
 - Aliases help you use output later on
 
