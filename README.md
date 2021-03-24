@@ -448,6 +448,12 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 
 ## **Cucumber (Behaviour Driven Approach to Testing)**
 
+**What is Behaviour-Driven Development**
+BDD is a way for software teams to work that closes the gap between business people and technical people.
+
+**[Read more about BDD...](https://cucumber.io/docs/bdd/)**
+**[Gherkin Syntax](https://cucumber.io/docs/gherkin/reference/)**
+
 1. Install Cucumber.js
 
 ```shell
