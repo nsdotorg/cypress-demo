@@ -145,7 +145,7 @@ npx cypress run
     html reports
 
 /root/cypress/screenshots
-    falied test screenshots
+    failed test screenshots
 
 /root/cypress/support
     /root/cypress/support/commands.js
