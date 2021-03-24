@@ -242,9 +242,11 @@ afterEach(); // run after each test in a describe
 
 Note: Cypress clears out the state of browser in between tests
 
-Example Scenario
+Example
 
 - before() - won't run any tests if included in a file when the test it contains fails
+
+**[Read more about these Hooks...](https://filiphric.com/cypress-basics-before-beforeeach-after-aftereach)**
 
 ## **Configuration**
 
