@@ -451,11 +451,13 @@ npm install --save-dev mocha cypress-multi-reporters mochawesome mochawesome-mer
 ## **Cucumber (Behaviour Driven Approach to Testing)**
 
 **What is Behaviour-Driven Development**
+
 BDD is a way for software teams to work that closes the gap between business people and technical people.
 
 **[Read more about BDD...](https://cucumber.io/docs/bdd/)**
 
 **What is Gherkin Syntax**
+
 Gherkin uses a set of special keywords to give structure and meaning to executable specifications. Each keyword is translated to many spoken languages; in this reference we’ll use English.
 
 **[Read more about Gherkin Syntax...](https://cucumber.io/docs/gherkin/reference/)**
