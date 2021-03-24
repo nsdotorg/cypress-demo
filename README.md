@@ -14,7 +14,7 @@
 - [**Prerequisites**](#Prerequisites)
 - [**Installation**](#Installation)
 - [**Directory Structure**](#Directory-Structure)
-- [**Desktop App vs Headless Run**](#Desktop-App-vs-Headless-Run)
+- [**Browser Run vs Headless Run**](#Browser-Run-vs-Headless-Run)
 - [**First Run (Tests in Cypress)**](#First-Run)
 - [**Intellisense**](#Intellisense)
 - [**Collections (describe) vs Individual Tests (it)**](#Collections-vs-Individual-Tests)
@@ -166,9 +166,9 @@ npx cypress run
         env configurations
 ```
 
-## **Desktop App vs Headless Run**
+## **Browser Run vs Headless Run**
 
-1. Desktop App
+1. Browser Run
 
 ```shell
 npx cypress open
