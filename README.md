@@ -336,6 +336,18 @@ it.skip("GET - read", () => {
 npx cypress run --spec "cypress/integration/examples/actions.spec.js" --browser chrome
 ```
 
+**Headless Run (single test)**
+
+<p align="center">
+  <img alt="Headless Run Summary - Single Test" src="assets/individual-test-summary.png" width="75%" height="75%" />
+</p>
+
+**Headless Run Results (all tests)**
+
+<p align="center">
+  <img alt="Headless Run Summary - All Tests" src="assets/headless-run-summary2.png" width="75%" height="75%" />
+</p>
+
 ## **Screenshots and Videos**
 
 - Video for tests run through headless run
@@ -624,7 +636,7 @@ This should run Cypress without any errors.
 1. [Strapi Conference](https://conf.strapi.io/)
 1. [Adobe Summit—The Digital Experience Conference](https://summit.adobe.com/na/)
 
-## **Demo Tab Links**
+## **Tabs**
 
 - [Cypress Website](https://www.cypress.io/)
 - [Cypress - NPM Package](https://www.npmjs.com/package/cypress)
@@ -637,3 +649,4 @@ This should run Cypress without any errors.
 - [Plugins Page](https://docs.cypress.io/plugins/)
 - [Plugin - Cypress File Upload](https://github.com/abramenal/cypress-file-upload)
 - [Plugin - Cypress Cucumber Preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
+- [Fixtures - File Priority Order](https://docs.cypress.io/api/commands/fixture#Validation)
