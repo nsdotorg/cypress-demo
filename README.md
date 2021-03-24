@@ -294,13 +294,13 @@ cy.get('@aliasName).first().click()
 
 ## **Headless Run**
 
-- What is Headless Run
-- Electron by Default During Headless Run
-- List of Browsers
-- Headless Run Demo
-- it.only / describe.only
-- it.skip / describe.skip
-  Note: Hooks always get executed
+- Running commands through command line
+- Runs in electron browser by default during a headless run
+- [Supported List of browsers](https://docs.cypress.io/guides/guides/launching-browsers#Browsers)
+- it.only() / describe.only()
+- it.skip() / describe.skip()
+
+Note: Hooks always get executed
 
 **`CLI COMMANDS`**
 
