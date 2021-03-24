@@ -259,19 +259,6 @@ Example
 - test retries
 - and a lot more...
 
-**Example configurations for default directories**
-
-```json
-{
-  "fixturesFolder": "test/cypress/fixtures",
-  "integrationFolder": "test/cypress/integration",
-  "pluginsFile": "test/cypress/plugins/index.js",
-  "screenshotsFolder": "test/cypress/screenshots",
-  "videosFolder": "test/cypress/videos",
-  "supportFile": "test/cypress/support/index.js"
-}
-```
-
 Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/configuration#Options) for more info
 
 ## **.then() command**
