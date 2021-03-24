@@ -26,7 +26,7 @@
 - [**Configuration**](#Configuration)
 - [**.then() command**](#then-command)
 - [**Aliases**](#Aliases)
-- [**Headless Run (Running tests through command line)**](#Headless-Run-Running-tests-through-command-line)
+- [**Headless Run**](#Headless-Run-Running-tests-through-command-line)
 - [**Screenshots and Videos**](#Screenshots-and-Videos)
 - [**File Upload Plugin**](#File-Upload-Plugin)
 - [**Reporting**](#Reporting)
@@ -292,7 +292,7 @@ Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/con
 cy.get('@aliasName).first().click()
 ```
 
-## **Headless Run (Running tests through command line)**
+## **Headless Run**
 
 - What is Headless Run
 - Electron by Default During Headless Run
