@@ -279,7 +279,6 @@ Visit [Cypress Configuration Page](https://docs.cypress.io/guides/references/con
 - Debugging
 - Extract Values
 - Comparisons
-- Aliases
 
 ## **Aliases**
 
