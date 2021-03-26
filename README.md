@@ -579,14 +579,14 @@ npm config edit
 
 **2. Add the following to your .npmrc file opened in the previous step or replace any existing proxy variables with the following 3 lines`**
 
-Note: Replace <VDI-ID> with your VDI ID/Network ID and <VDI-PASSWORD> with your VDI password`
+Note: Replace <VDI-ID> with your VDI ID/Network ID, <VDI-PASSWORD> with your VDI password, <PROXY-ADDRESS> with the proxy address of your organization, and <PORT> with the given port.`
 
 ```shell
-proxy=http://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080/
+proxy=http://<VDI-ID>:<VDI-PASSWORD>@<PROXY-ADDRESS>:<PORT>/
 
-set HTTP_PROXY=http://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
+set HTTP_PROXY=http://<VDI-ID>:<VDI-PASSWORD>@<PROXY-ADDRESS>:<PORT>
 
-set HTTPS_PROXY=https://<VDI-ID>:<VDI-PASSWORD>@vmproxy.virginmedia.co.uk:8080
+set HTTPS_PROXY=https://<VDI-ID>:<VDI-PASSWORD>@<PROXY-ADDRESS>:<PORT>
 ```
 
 **3. Remove /node_modules from the directory where cypress is installed. For content-pages repo, this is /content-pages/e2e/node_modules directory**
