@@ -640,7 +640,7 @@ This should run Cypress without any errors.
 
 (Go to Step 6 and increase the value if it still gives timeout errors)
 
-## **Cypress Dashboad**
+## **Cypress Dashboard**
 
 - [Go to Cypress Dashboard](https://dashboard.cypress.io)
 - [Pricing - Cypress Dashboard](https://www.cypress.io/pricing/)
