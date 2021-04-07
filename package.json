@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/nsdotorg/cypress-demo#readme",
   "dependencies": {
-    "cypress": "^6.8.0"
+    "cypress": "^7.0.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
